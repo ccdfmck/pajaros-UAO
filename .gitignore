@@ -147,3 +147,15 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de trabajo 3D pesados (van en Google Drive)
+*.blend
+*.blend1
+*.fbx
+*.psd
+*.rar
