@@ -216,7 +216,18 @@
       "geometry": null,
       "material": null,
       "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
-      "components": {},
+      "components": {
+        "128f0daa-c6e0-44ae-b5c8-482023a5b963": {
+          "id": "128f0daa-c6e0-44ae-b5c8-482023a5b963",
+          "name": "boton-quiz",
+          "parameters": {}
+        },
+        "d0969d3f-bfb9-45fe-af80-ce34c84b0e8c": {
+          "id": "d0969d3f-bfb9-45fe-af80-ce34c84b0e8c",
+          "name": "quiz-html",
+          "parameters": {}
+        }
+      },
       "ui": {
         "type": "3d",
         "width": 100,
