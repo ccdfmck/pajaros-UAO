@@ -158,6 +158,37 @@
         "name": "Img1"
       },
       "order": 2.5918040798150734
+    },
+    "d3fcbb9a-48e0-4d15-b935-3e38045fecbe": {
+      "id": "d3fcbb9a-48e0-4d15-b935-3e38045fecbe",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "d417fadf-fa90-466f-b259-6a9c729f0d2c": {
+          "id": "d417fadf-fa90-466f-b259-6a9c729f0d2c",
+          "name": "menu-inicio",
+          "parameters": {}
+        }
+      },
+      "name": "Menu",
+      "order": 3.8372667056787098
     }
   },
   "spaces": {
