@@ -66,7 +66,8 @@
         1
       ],
       "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
-      "order": 1.4038940050501252
+      "order": 1.4038940050501252,
+      "hidden": false
     },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
@@ -185,11 +186,6 @@
           "id": "d417fadf-fa90-466f-b259-6a9c729f0d2c",
           "name": "menu-inicio",
           "parameters": {}
-        },
-        "1221d3a1-2d9d-428a-9e7a-b7c19fe4e3e2": {
-          "id": "1221d3a1-2d9d-428a-9e7a-b7c19fe4e3e2",
-          "name": "quiz-html",
-          "parameters": {}
         }
       },
       "name": "Menu",
@@ -221,19 +217,14 @@
           "id": "128f0daa-c6e0-44ae-b5c8-482023a5b963",
           "name": "boton-quiz",
           "parameters": {}
-        },
-        "d0969d3f-bfb9-45fe-af80-ce34c84b0e8c": {
-          "id": "d0969d3f-bfb9-45fe-af80-ce34c84b0e8c",
-          "name": "quiz-html",
-          "parameters": {}
         }
       },
       "ui": {
         "type": "3d",
-        "width": 100,
-        "height": 36,
-        "background": "#ad50ff",
-        "borderRadius": 18,
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
         "flexDirection": "row",
         "backgroundOpacity": 1,
         "padding": "10",
@@ -241,8 +232,9 @@
         "alignItems": "center",
         "justifyContent": "center"
       },
-      "name": "Botón",
-      "order": 2.881941259829796
+      "name": "Botón Quiz",
+      "order": 5.3438831616961835,
+      "hidden": false
     },
     "59c362de-a55e-4ba9-b9b6-b875a1ab994b": {
       "id": "59c362de-a55e-4ba9-b9b6-b875a1ab994b",
@@ -278,7 +270,8 @@
         "alignItems": "center",
         "justifyContent": "center"
       },
-      "order": 0.41012655607609094
+      "order": 0.41012655607609094,
+      "disabled": true
     },
     "c4d96e10-b440-49c6-95d1-1fa980bb64fc": {
       "id": "c4d96e10-b440-49c6-95d1-1fa980bb64fc",
@@ -311,11 +304,11 @@
       "name": "Texto",
       "ui": {
         "flexDirection": "row",
-        "width": 50,
+        "width": 140,
         "height": 14,
         "text": "Iniciemos el Quiz",
         "color": "#ffffff",
-        "fontSize": 12,
+        "fontSize": 8,
         "alignItems": "center",
         "justifyContent": "center",
         "paddingTop": 0,
@@ -325,16 +318,780 @@
         "marginBottom": 1,
         "marginLeft": 1,
         "marginRight": 1,
-        "verticalTextAlign": "center"
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
       },
       "order": 1.2347420341272946
+    },
+    "edba4463-ea60-42a6-8132-1e06855c004c": {
+      "id": "edba4463-ea60-42a6-8132-1e06855c004c",
+      "position": [
+        2.016314484867382,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {
+        "958456a9-ba23-4caf-8169-74661462cd4c": {
+          "id": "958456a9-ba23-4caf-8169-74661462cd4c",
+          "name": "quiz-nativo",
+          "parameters": {
+            "pregunta": {
+              "type": "entity",
+              "id": "8185a56d-0f4b-4889-b5d6-e1ae215e5d92"
+            },
+            "opcion1": {
+              "type": "entity",
+              "id": "f6abf338-5961-40b0-a4a0-abbef07bdd11"
+            },
+            "opcion2": {
+              "type": "entity",
+              "id": "d674b617-b956-4c7a-ab39-51115b1e4f1a"
+            },
+            "opcion3": {
+              "type": "entity",
+              "id": "dbc8324b-4937-4d59-be7c-8cd7440078eb"
+            },
+            "feedback": {
+              "type": "entity",
+              "id": "0ced428c-0700-44b2-ad88-82d8bb0a3d0f"
+            },
+            "siguiente": {
+              "type": "entity",
+              "id": "fece4c96-8d94-4112-81db-57e1fc38e782"
+            },
+            "cerrarBtn": {
+              "type": "entity",
+              "id": "0d3aa165-f37b-4da0-9bf3-e897fb3821ba"
+            }
+          }
+        }
+      },
+      "ui": {
+        "borderColor": "#ffffff",
+        "borderWidth": 1,
+        "flexDirection": "column",
+        "width": 150,
+        "height": 250,
+        "type": "3d",
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
+        "stackingOrder": 1,
+        "backgroundSize": "contain",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "flexWrap": "nowrap"
+      },
+      "name": "Panel Quiz",
+      "order": 4.308179299611534,
+      "hidden": false
+    },
+    "8185a56d-0f4b-4889-b5d6-e1ae215e5d92": {
+      "id": "8185a56d-0f4b-4889-b5d6-e1ae215e5d92",
+      "position": [
+        0,
+        2.009167215217103,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "edba4463-ea60-42a6-8132-1e06855c004c",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "KLWNWBDGHSH S NJKCNSDNC DC DCM SDMC DJ CHBHDS  ",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center"
+      },
+      "name": "Pregunta",
+      "order": 3.793777077830939,
+      "hidden": false
+    },
+    "f6abf338-5961-40b0-a4a0-abbef07bdd11": {
+      "id": "f6abf338-5961-40b0-a4a0-abbef07bdd11",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "edba4463-ea60-42a6-8132-1e06855c004c",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "column",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP1",
+      "order": 6.5580087534217
+    },
+    "52905973-26eb-433b-b92f-43d5357c0ce2": {
+      "id": "52905973-26eb-433b-b92f-43d5357c0ce2",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f6abf338-5961-40b0-a4a0-abbef07bdd11",
+      "components": {},
+      "name": "Icono",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "7eae2f3d-8b02-4061-9ba9-851b9279bf47": {
+      "id": "7eae2f3d-8b02-4061-9ba9-851b9279bf47",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f6abf338-5961-40b0-a4a0-abbef07bdd11",
+      "components": {},
+      "name": "Texto",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "En el Inspector de cada elemento ajusta color ",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "0ced428c-0700-44b2-ad88-82d8bb0a3d0f": {
+      "id": "0ced428c-0700-44b2-ad88-82d8bb0a3d0f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "edba4463-ea60-42a6-8132-1e06855c004c",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "KLWNWBDGHSH S NJKCNSDNC DC DCM SDMC DJ CHBHDS  ",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center"
+      },
+      "name": "Feedback",
+      "order": 8.863459520180726,
+      "hidden": false
+    },
+    "d674b617-b956-4c7a-ab39-51115b1e4f1a": {
+      "id": "d674b617-b956-4c7a-ab39-51115b1e4f1a",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "edba4463-ea60-42a6-8132-1e06855c004c",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP2",
+      "order": 6.936832068273769
+    },
+    "310a72e2-bbcd-4607-a685-336db21f598c": {
+      "id": "310a72e2-bbcd-4607-a685-336db21f598c",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d674b617-b956-4c7a-ab39-51115b1e4f1a",
+      "components": {},
+      "name": "Icono (9)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "c03c8e8d-9a0d-48c4-a35a-133412fa3553": {
+      "id": "c03c8e8d-9a0d-48c4-a35a-133412fa3553",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d674b617-b956-4c7a-ab39-51115b1e4f1a",
+      "components": {},
+      "name": "Texto (9)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "En el Inspector de cada elemento ajusta color ",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "dbc8324b-4937-4d59-be7c-8cd7440078eb": {
+      "id": "dbc8324b-4937-4d59-be7c-8cd7440078eb",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "edba4463-ea60-42a6-8132-1e06855c004c",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP3",
+      "order": 7.2958998532323385
+    },
+    "7e99aefe-bfcb-43d0-ad1a-736132b184ac": {
+      "id": "7e99aefe-bfcb-43d0-ad1a-736132b184ac",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "dbc8324b-4937-4d59-be7c-8cd7440078eb",
+      "components": {},
+      "name": "Icono (10)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "2f7d2980-85c3-4723-bd72-9614cd32ee31": {
+      "id": "2f7d2980-85c3-4723-bd72-9614cd32ee31",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "dbc8324b-4937-4d59-be7c-8cd7440078eb",
+      "components": {},
+      "name": "Texto (10)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "En el Inspector de cada elemento ajusta color ",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "fece4c96-8d94-4112-81db-57e1fc38e782": {
+      "id": "fece4c96-8d94-4112-81db-57e1fc38e782",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "edba4463-ea60-42a6-8132-1e06855c004c",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100",
+        "height": 15,
+        "background": "#c6a15b",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Siguiente",
+      "order": 10.145438208773879
+    },
+    "b80ce969-c157-42ed-82b7-52159af644aa": {
+      "id": "b80ce969-c157-42ed-82b7-52159af644aa",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "fece4c96-8d94-4112-81db-57e1fc38e782",
+      "components": {},
+      "name": "Icono (11)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "a046204c-df84-4f72-bc12-ca945ba5eb38": {
+      "id": "a046204c-df84-4f72-bc12-ca945ba5eb38",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "fece4c96-8d94-4112-81db-57e1fc38e782",
+      "components": {},
+      "name": "Texto (11)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 100,
+        "height": 15,
+        "text": "Siguiente",
+        "color": "#000000",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "0d3aa165-f37b-4da0-9bf3-e897fb3821ba": {
+      "id": "0d3aa165-f37b-4da0-9bf3-e897fb3821ba",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "edba4463-ea60-42a6-8132-1e06855c004c",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Cerrar",
+      "order": 10.576983468739265
+    },
+    "9b71926a-625c-4ee2-8a5d-0a9cc54ffa7d": {
+      "id": "9b71926a-625c-4ee2-8a5d-0a9cc54ffa7d",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0d3aa165-f37b-4da0-9bf3-e897fb3821ba",
+      "components": {},
+      "name": "Icono (12)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "ca8d1286-8395-4404-804e-d07232ebba4c": {
+      "id": "ca8d1286-8395-4404-804e-d07232ebba4c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0d3aa165-f37b-4da0-9bf3-e897fb3821ba",
+      "components": {},
+      "name": "Texto (12)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "X",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
     }
   },
   "spaces": {
     "88453035-dc0f-486d-868a-8ff7c2fda864": {
       "id": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "name": "Default Space",
-      "activeCamera": "a608ddd9-9379-464d-966f-5d8d8674c83c"
+      "activeCamera": "a608ddd9-9379-464d-966f-5d8d8674c83c",
+      "sky": {
+        "type": "gradient",
+        "colors": [
+          "#464766",
+          "#08061F"
+        ],
+        "style": "linear"
+      }
     }
   },
   "entrySpaceId": "88453035-dc0f-486d-868a-8ff7c2fda864"
