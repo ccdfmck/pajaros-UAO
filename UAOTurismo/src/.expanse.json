@@ -3939,7 +3939,6 @@
         "name": "Img5"
       },
       "order": 3.7822466552784144,
-      "disabled": true,
       "hidden": false
     },
     "bba13238-3954-44f9-82fa-16870dcc6901": {
@@ -7567,6 +7566,497 @@
       },
       "name": "martin_pescador_volando_HD.glb",
       "order": 7.153579020279458
+    },
+    "e84a228b-925d-4e99-8594-b162dbe36d37": {
+      "id": "e84a228b-925d-4e99-8594-b162dbe36d37",
+      "position": [
+        -1.2374044008583973,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "6cbcf0e5-c1e2-456b-b4f9-acd90470db79": {
+          "id": "6cbcf0e5-c1e2-456b-b4f9-acd90470db79",
+          "name": "juego-canto",
+          "parameters": {
+            "textoMensaje": {
+              "type": "entity",
+              "id": "f7aa7fe4-1597-4454-b76f-18a3e8325927"
+            },
+            "audioPechirrojo": "assets/Dacnis_pechirrojo_.mp3",
+            "audioPeriquito": "assets/Catita_churica_.mp3",
+            "audioAzulejo": "assets/Tangara_azuleja_.mp3",
+            "pistaPechirrojo": "Hace varios silbiditos cortos y agudos, uno tras otro, como si estuviera llamando a otro pajarito"
+          }
+        }
+      },
+      "ui": {
+        "flexDirection": "column",
+        "width": 150,
+        "height": 250,
+        "type": "3d",
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "borderRadius": 5
+      },
+      "name": "Juego Gavilan",
+      "order": 7.319651873972848,
+      "parentId": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc"
+    },
+    "f7aa7fe4-1597-4454-b76f-18a3e8325927": {
+      "id": "f7aa7fe4-1597-4454-b76f-18a3e8325927",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e84a228b-925d-4e99-8594-b162dbe36d37",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": "100",
+        "height": 30,
+        "text": "Mensaje",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "type": "3d",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "verticalTextAlign": "center"
+      },
+      "name": "Puntuación",
+      "order": 1
+    },
+    "916ddfc7-65b4-4537-ab63-7d550603fa39": {
+      "id": "916ddfc7-65b4-4537-ab63-7d550603fa39",
+      "position": [
+        0,
+        0,
+        0.9699355850288209
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Comenzar",
+      "order": 20.383342360113758,
+      "parentId": "0fa9a7f8-8ea0-4fc4-bfff-5f16928a25e1"
+    },
+    "a80acd27-bb64-4845-b11a-a433f9ba9e1a": {
+      "id": "a80acd27-bb64-4845-b11a-a433f9ba9e1a",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "916ddfc7-65b4-4537-ab63-7d550603fa39",
+      "components": {},
+      "name": "Icono (56)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 3,
+      "disabled": true
+    },
+    "f666edc7-f735-49a4-9684-dc2a03a6d42b": {
+      "id": "f666edc7-f735-49a4-9684-dc2a03a6d42b",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "916ddfc7-65b4-4537-ab63-7d550603fa39",
+      "components": {},
+      "name": "Texto (56)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 50,
+        "height": 15,
+        "text": "Comenzar",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 4
+    },
+    "0fa9a7f8-8ea0-4fc4-bfff-5f16928a25e1": {
+      "id": "0fa9a7f8-8ea0-4fc4-bfff-5f16928a25e1",
+      "position": [
+        0,
+        0,
+        -0.9699355850288209
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e84a228b-925d-4e99-8594-b162dbe36d37",
+      "components": {},
+      "name": "Objeto vacío (1)",
+      "order": -1.6910754334743554,
+      "ui": {
+        "flexDirection": "row",
+        "type": "3d",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "width": 20,
+        "height": 20,
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "gap": 3
+      }
+    },
+    "cf5525f4-007e-4d1f-a6c6-88afe70889b7": {
+      "id": "cf5525f4-007e-4d1f-a6c6-88afe70889b7",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Reinciar (3)",
+      "order": 10.861322303656898,
+      "parentId": "e84a228b-925d-4e99-8594-b162dbe36d37"
+    },
+    "b0972169-5095-4476-adec-1dae8f99c7b8": {
+      "id": "b0972169-5095-4476-adec-1dae8f99c7b8",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "cf5525f4-007e-4d1f-a6c6-88afe70889b7",
+      "components": {},
+      "name": "Icono (57)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 3,
+      "disabled": true
+    },
+    "797856e7-e38a-4965-821c-e9b431caab15": {
+      "id": "797856e7-e38a-4965-821c-e9b431caab15",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "cf5525f4-007e-4d1f-a6c6-88afe70889b7",
+      "components": {},
+      "name": "Texto (57)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 50,
+        "height": 15,
+        "text": "Reiniciar",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 4
+    },
+    "606e0160-f2c9-4657-82df-d3f90cba6c91": {
+      "id": "606e0160-f2c9-4657-82df-d3f90cba6c91",
+      "position": [
+        0,
+        0,
+        0.9699355850288209
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Salir",
+      "order": 20.766684720227516,
+      "parentId": "0fa9a7f8-8ea0-4fc4-bfff-5f16928a25e1"
+    },
+    "b4e898ca-c281-4f21-ad8d-a28a1d2d188d": {
+      "id": "b4e898ca-c281-4f21-ad8d-a28a1d2d188d",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "606e0160-f2c9-4657-82df-d3f90cba6c91",
+      "components": {},
+      "name": "Icono (58)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 3,
+      "disabled": true
+    },
+    "29075779-c954-4df6-83fe-40571949099c": {
+      "id": "29075779-c954-4df6-83fe-40571949099c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "606e0160-f2c9-4657-82df-d3f90cba6c91",
+      "components": {},
+      "name": "Texto (58)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 50,
+        "height": 15,
+        "text": "Salir",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 4
     }
   },
   "spaces": {
