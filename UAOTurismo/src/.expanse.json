@@ -151,8 +151,7 @@
       },
       "name": "Menu",
       "order": 3.8372667056787098,
-      "disabled": true,
-      "hidden": true
+      "hidden": false
     },
     "44a48149-4d3d-45f4-ad04-bf3f48f77cad": {
       "id": "44a48149-4d3d-45f4-ad04-bf3f48f77cad",
