@@ -12,14 +12,18 @@ const registros = new Map<bigint, Registro>()
 ecs.registerComponent({
   name: 'quiz-nativo',
   schema: {
-    pajaro: ecs.string,    // pajaro1, pajaro2...
-    pregunta: ecs.eid,     // texto de la pregunta
-    opcion1: ecs.eid,      // botones de respuesta
+    pajaro: ecs.string,        // pajaro1, pajaro2...
+    pregunta: ecs.eid,         // texto de la pregunta
+    opcion1: ecs.eid,          // botones de respuesta (los padres, reciben el clic)
     opcion2: ecs.eid,
     opcion3: ecs.eid,
-    feedback: ecs.eid,     // texto "Correcto / Incorrecto"
-    siguiente: ecs.eid,    // botón Siguiente
-    cerrarBtn: ecs.eid,    // botón X
+    feedback: ecs.eid,         // texto "Correcto / Incorrecto"
+    siguiente: ecs.eid,        // botón Siguiente (padre)
+    cerrarBtn: ecs.eid,        // botón X
+    textoOp1: ecs.eid,         // el "Texto" hijo de OP1
+    textoOp2: ecs.eid,         // el "Texto" hijo de OP2
+    textoOp3: ecs.eid,         // el "Texto" hijo de OP3
+    textoSiguiente: ecs.eid,   // el "Texto" hijo de Siguiente
   },
   schemaDefaults: {
     pajaro: 'pajaro1',
@@ -28,6 +32,7 @@ ecs.registerComponent({
     const s = component.schema
     const preguntas = PREGUNTAS[s.pajaro] ?? []
     const opciones: any[] = [s.opcion1, s.opcion2, s.opcion3]
+    const textos: any[] = [s.textoOp1, s.textoOp2, s.textoOp3]
 
     let indice = 0
     let puntaje = 0
@@ -53,7 +58,7 @@ ecs.registerComponent({
       poner(s.pregunta, `${indice + 1}/${preguntas.length}  ${p.texto}`)
       opciones.forEach((eid, i) => {
         if (i < p.opciones.length) {
-          poner(eid, p.opciones[i])
+          poner(textos[i] || eid, p.opciones[i])
           mostrar(eid)
         } else {
           ocultar(eid)
@@ -71,7 +76,10 @@ ecs.registerComponent({
       if (acierto) puntaje++
       poner(s.feedback, (acierto ? '¡Correcto! ' : 'Incorrecto. ') + p.explicacion)
       mostrar(s.feedback)
-      poner(s.siguiente, indice === preguntas.length - 1 ? 'Ver resultado' : 'Siguiente')
+      poner(
+        s.textoSiguiente || s.siguiente,
+        indice === preguntas.length - 1 ? 'Ver resultado' : 'Siguiente'
+      )
       mostrar(s.siguiente)
     }
 
@@ -89,7 +97,7 @@ ecs.registerComponent({
         poner(s.pregunta, `¡Terminaste! Puntaje: ${puntaje}/${preguntas.length}`)
         for (const eid of opciones) ocultar(eid)
         ocultar(s.feedback)
-        poner(s.siguiente, 'Intentar de nuevo')
+        poner(s.textoSiguiente || s.siguiente, 'Intentar de nuevo')
         mostrar(s.siguiente)
         return
       }

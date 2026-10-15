@@ -61,9 +61,9 @@
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.5,
+        0.5,
+        0.5
       ],
       "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
       "order": 1.4038940050501252,
@@ -329,7 +329,7 @@
     "edba4463-ea60-42a6-8132-1e06855c004c": {
       "id": "edba4463-ea60-42a6-8132-1e06855c004c",
       "position": [
-        2.016314484867382,
+        1.503316433410972,
         0,
         0
       ],
@@ -379,6 +379,22 @@
             "cerrarBtn": {
               "type": "entity",
               "id": "0d3aa165-f37b-4da0-9bf3-e897fb3821ba"
+            },
+            "textoOp1": {
+              "type": "entity",
+              "id": "7eae2f3d-8b02-4061-9ba9-851b9279bf47"
+            },
+            "textoOp2": {
+              "type": "entity",
+              "id": "c03c8e8d-9a0d-48c4-a35a-133412fa3553"
+            },
+            "textoOp3": {
+              "type": "entity",
+              "id": "2f7d2980-85c3-4723-bd72-9614cd32ee31"
+            },
+            "textoSiguiente": {
+              "type": "entity",
+              "id": "a046204c-df84-4f72-bc12-ca945ba5eb38"
             }
           }
         }
@@ -428,11 +444,15 @@
       "ui": {
         "width": 150,
         "height": 36,
-        "text": "KLWNWBDGHSH S NJKCNSDNC DC DCM SDMC DJ CHBHDS  ",
+        "text": "¿Que come principalmente este pajaro?",
         "color": "#ffffff",
         "fontSize": 8,
         "type": "3d",
-        "verticalTextAlign": "center"
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
       },
       "name": "Pregunta",
       "order": 3.793777077830939,
@@ -544,7 +564,7 @@
         "flexDirection": "row",
         "width": 140,
         "height": 15,
-        "text": "En el Inspector de cada elemento ajusta color ",
+        "text": "Semillas",
         "color": "#ffffff",
         "fontSize": 6,
         "textAlign": "center",
@@ -584,7 +604,7 @@
       "ui": {
         "width": 150,
         "height": 36,
-        "text": "KLWNWBDGHSH S NJKCNSDNC DC DCM SDMC DJ CHBHDS  ",
+        "text": "Es insectívoro: se alimenta sobre todo de insectos",
         "color": "#ffffff",
         "fontSize": 8,
         "type": "3d",
@@ -700,7 +720,7 @@
         "flexDirection": "row",
         "width": 140,
         "height": 15,
-        "text": "En el Inspector de cada elemento ajusta color ",
+        "text": "Insectos",
         "color": "#ffffff",
         "fontSize": 6,
         "textAlign": "center",
@@ -821,7 +841,7 @@
         "flexDirection": "row",
         "width": 140,
         "height": 15,
-        "text": "En el Inspector de cada elemento ajusta color ",
+        "text": "Peces",
         "color": "#ffffff",
         "fontSize": 6,
         "textAlign": "center",
