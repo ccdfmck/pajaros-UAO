@@ -119,6 +119,7 @@
         "name": "Img1"
       },
       "order": 2.5918040798150734,
+      "disabled": true,
       "hidden": false
     },
     "d3fcbb9a-48e0-4d15-b935-3e38045fecbe": {
@@ -405,14 +406,14 @@
       "ui": {
         "width": 150,
         "height": 36,
-        "text": "Que come principalmente\n este pajaro?",
+        "text": "¿Que come principalmente este pajaro?",
         "color": "#ffffff",
         "fontSize": 8,
         "type": "3d",
-        "verticalTextAlign": "start",
+        "verticalTextAlign": "center",
         "font": {
           "type": "font",
-          "font": "Inconsolata"
+          "font": "Futura"
         }
       },
       "name": "Pregunta",
@@ -565,7 +566,7 @@
       "ui": {
         "width": 150,
         "height": 36,
-        "text": "Es insectivoro: se alimenta sobre todo de insectos",
+        "text": "Es insectívoro: se alimenta sobre todo de insectos",
         "color": "#ffffff",
         "fontSize": 8,
         "type": "3d",
@@ -1086,7 +1087,8 @@
         "name": "Img2"
       },
       "order": 3.4826145296300406,
-      "hidden": true
+      "hidden": false,
+      "disabled": true
     },
     "86a952d9-c1bd-4360-bb14-d5da00696463": {
       "id": "86a952d9-c1bd-4360-bb14-d5da00696463",
@@ -2023,7 +2025,8 @@
         "name": "Img3"
       },
       "order": 3.577730798948715,
-      "hidden": true
+      "disabled": true,
+      "hidden": false
     },
     "29e8a0a6-4ee4-4587-91b2-6ef56b73d580": {
       "id": "29e8a0a6-4ee4-4587-91b2-6ef56b73d580",
@@ -2961,7 +2964,7 @@
         "name": "Img4"
       },
       "order": 3.7345681010628784,
-      "hidden": true
+      "hidden": false
     },
     "594bc724-f1c1-4803-9f8f-8cf95ed56157": {
       "id": "594bc724-f1c1-4803-9f8f-8cf95ed56157",
@@ -3899,7 +3902,8 @@
         "name": "Img5"
       },
       "order": 3.7822466552784144,
-      "hidden": true
+      "hidden": false,
+      "disabled": true
     },
     "b1561716-d675-4e19-96db-74d03cd02bf8": {
       "id": "b1561716-d675-4e19-96db-74d03cd02bf8",
