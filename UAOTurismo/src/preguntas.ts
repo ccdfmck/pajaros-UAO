@@ -1,7 +1,7 @@
 export type Pregunta = {
   texto: string
   opciones: string[]
-  correcta: number      // posición de la opción correcta (0, 1, 2...)
+  correcta: number
   explicacion: string
 }
 
@@ -9,140 +9,140 @@ export const PREGUNTAS: Record<string, Pregunta[]> = {
   // 1. Guacamaya cariseca
   pajaro1: [
     {
-      texto: '¿De qué color es casi todo su cuerpo?',
-      opciones: ['Verde', 'Rojo', 'Azul'],
+      texto: 'Cual es el nombre cientifico de la Guacamaya Cariseca?',
+      opciones: ['Megaceryle torquata', 'Ara severus', 'Rupornis magnirostris'],
+      correcta: 1,
+      explicacion: 'Su nombre cientifico es Ara severus.',
+    },
+    {
+      texto: 'Cual es el color predominante de su plumaje?',
+      opciones: ['Verde', 'Azul', 'Amarillo'],
       correcta: 0,
-      explicacion: 'Es mayormente verde, con la cara blancuzca.',
+      explicacion: 'Su plumaje es principalmente verde.',
     },
     {
-      texto: '¿Cuándo se ve el rojo de sus alas?',
-      opciones: ['Cuando está posada', 'Cuando vuela', 'Solo de noche'],
-      correcta: 1,
-      explicacion: 'El rojizo está en la parte de abajo de las alas y solo se ve en vuelo.',
-    },
-    {
-      texto: '¿Cómo suele encontrarse?',
-      opciones: ['Siempre sola', 'Solo en cuevas', 'En parejas o pequeñas bandadas'],
+      texto: 'Que color tiene la parte inferior de sus alas?',
+      opciones: ['Blanca', 'Negra', 'Rojiza'],
       correcta: 2,
-      explicacion: 'Se ve en parejas o en pequeñas bandadas.',
+      explicacion: 'La parte inferior de sus alas es rojiza y se aprecia durante el vuelo.',
     },
     {
-      texto: '¿Cómo es su voz?',
-      opciones: ['Un canto suave', 'Llamadas muy ásperas', 'No hace sonidos'],
+      texto: 'Como suele encontrarse esta guacamaya?',
+      opciones: ['Siempre sola', 'En parejas o pequenas bandadas', 'En grandes grupos acuaticos'],
       correcta: 1,
-      explicacion: 'Se reconoce por sus llamadas muy ásperas.',
+      explicacion: 'Suele encontrarse en parejas o pequenas bandadas.',
     },
   ],
 
-  // 2. Pechirrojo
+  // 2. Petirrojo o Pechirrojo
   pajaro2: [
     {
-      texto: '¿De qué color es el pecho del macho?',
-      opciones: ['Amarillo', 'Azul', 'Rojo vivo'],
-      correcta: 2,
-      explicacion: 'El macho tiene el pecho y la cabeza de un rojo muy vivo.',
-    },
-    {
-      texto: '¿De qué se alimenta principalmente?',
-      opciones: ['Insectos', 'Peces', 'Carne de animales grandes'],
-      correcta: 0,
-      explicacion: 'Es un ave insectívora.',
-    },
-    {
-      texto: '¿Cómo caza?',
-      opciones: ['Cavando el suelo', 'Al vuelo, desde una rama', 'Buceando'],
+      texto: Que color destaca en el macho adulto?',
+      opciones: ['Azul', 'Rojo', 'Verde'],
       correcta: 1,
-      explicacion: 'Espera en una rama y sale a atrapar insectos al vuelo.',
+      explicacion: 'El macho adulto tiene la cabeza y las partes inferiores de color rojo vivo.',
     },
     {
-      texto: '¿Cómo es la hembra?',
-      opciones: ['Igual de roja', 'Completamente azul', 'Pardo grisácea'],
+      texto: 'De que se alimenta principalmente?',
+      opciones: ['Insectos', 'Semillas', 'Peces'],
+      correcta: 0,
+      explicacion: 'Su alimentacion se basa principalmente en insectos.',
+    },
+    {
+      texto: 'En que habitats se encuentra?',
+      opciones: ['Desiertos', 'Aguas profundas', 'Bosques abiertos y zonas con maleza'],
       correcta: 2,
-      explicacion: 'La hembra es de tonos pardo grisáceos, mucho menos llamativa que el macho.',
+      explicacion: 'Habita en bosques abiertos y areas con arbustos.',
+    },
+    {
+      texto: 'Donde suele posarse?',
+      opciones: ['En postes junto a las carreteras', 'Bajo el agua', 'En cuevas profundas'],
+      correcta: 0,
+      explicacion: 'Suele posarse en postes de cercas junto a las carreteras.',
     },
   ],
 
-  // 3. Colibrí cola azul
+  // 3. Colibri Colirufo
   pajaro3: [
     {
-      texto: '¿De qué se alimenta principalmente?',
-      opciones: ['Néctar de flores', 'Semillas duras', 'Peces'],
-      correcta: 0,
-      explicacion: 'Se alimenta sobre todo del néctar de las flores.',
-    },
-    {
-      texto: '¿Qué puede hacer en el aire?',
-      opciones: ['Dormir volando', 'Quedarse quieto', 'Volar bajo el agua'],
+      texto: 'Que color tiene la cola del Colibri Colirufo?',
+      opciones: ['Blanca', 'Canela', 'Negra'],
       correcta: 1,
-      explicacion: 'Bate las alas decenas de veces por segundo y se queda quieto en el aire.',
+      explicacion: 'Una de sus caracteristicas es su cola de color canela.',
     },
     {
-      texto: '¿Qué tamaño tiene?',
-      opciones: ['Es del tamaño de un águila', 'Es más grande que un loro', 'Es de las aves más pequeñas'],
+      texto: 'Que lugares prefiere habitar?',
+      opciones: ['Desiertos secos', 'Mar abierto', 'Jardines y bordes de bosque'],
       correcta: 2,
-      explicacion: 'Los colibríes están entre las aves más pequeñas que existen.',
+      explicacion: 'Prefiere los bordes de bosque, la vegetacion secundaria y los jardines.',
     },
     {
-      texto: '¿Con qué toma el néctar?',
-      opciones: ['Con una lengua larga', 'Con las patas', 'Con la cola'],
+      texto: 'Donde suele alimentarse?',
+      opciones: ['En diferentes alturas de la vegetacion', 'Solo en el suelo', 'Bajo el agua'],
       correcta: 0,
-      explicacion: 'Usa su lengua larga y delgada para sacar el néctar.',
+      explicacion: 'Busca alimento desde las partes bajas hasta las altas de la vegetacion.',
+    },
+    {
+      texto: 'Que suele visitar para alimentarse?',
+      opciones: ['Cuevas', 'Comederos para colibries', 'Nidos de otras aves'],
+      correcta: 1,
+      explicacion: 'Con frecuencia visita comederos para colibries.',
     },
   ],
 
-  // 4. Gavilán caminero
+  // 4. Gavilan o Pigua
   pajaro4: [
     {
-      texto: '¿De qué se alimenta?',
-      opciones: ['Solo frutas', 'Solo néctar', 'Animales pequeños que caza'],
-      correcta: 2,
-      explicacion: 'Es un ave rapaz: caza animales pequeños, como lagartijas e insectos grandes.',
-    },
-    {
-      texto: '¿Por qué se le llama "caminero"?',
-      opciones: ['Camina todo el día', 'Se posa a la orilla de caminos', 'Vive en cuevas'],
-      correcta: 1,
-      explicacion: 'Suele posarse a la orilla de caminos y zonas abiertas.',
-    },
-    {
-      texto: '¿Qué tipo de ave es?',
-      opciones: ['Rapaz que caza de día', 'Ave nocturna', 'Ave acuática'],
+      texto: 'Cual es el nombre cientifico del Gavilan o Pigua?',
+      opciones: ['Milvago chimachima', 'Ara severus', 'Amazilia tzacatl'],
       correcta: 0,
-      explicacion: 'Es una rapaz diurna: caza durante el día.',
+      explicacion: 'Su nombre cientifico es Milvago chimachima.',
     },
     {
-      texto: '¿Qué usa para atrapar a sus presas?',
-      opciones: ['Su canto', 'Una red', 'Sus garras afiladas'],
+      texto: 'De que color es principalmente el adulto?',
+      opciones: ['Verde brillante', 'Beige palido', 'Rojo intenso'],
+      correcta: 1,
+      explicacion: 'El adulto presenta un plumaje principalmente beige pálido.',
+    },
+    {
+      texto: 'En que lugares suele encontrarse?',
+      opciones: ['En aguas profundas', 'En cuevas oscuras', 'En pastizales y bordes de rios'],
       correcta: 2,
-      explicacion: 'Las atrapa con sus garras fuertes y afiladas.',
+      explicacion: 'Habita en espacios abiertos, como pastizales y bordes de rios.',
+    },
+    {
+      texto: 'Como son sus vocalizaciones?',
+      opciones: ['Chirriantes', 'Silenciosas', 'Silbidos melodicos suaves'],
+      correcta: 0,
+      explicacion: 'Sus vocalizaciones se describen como sonidos chirriantes.',
     },
   ],
 
-  // 5. Martín pescador
+  // 5. Martin Pescador
   pajaro5: [
     {
-      texto: '¿Cómo atrapa a sus presas?',
-      opciones: ['Cavando bajo tierra', 'Lanzándose en picada al agua', 'Esperando en el suelo'],
+      texto: '¿Cual es el nombre cientifico del Martin Pescador?',
+      opciones: ['Ara severus', 'Megaceryle torquata', 'Pyrocephalus rubinus'],
       correcta: 1,
-      explicacion: 'Se lanza en picada al agua para atrapar peces con el pico.',
+      explicacion: 'Su nombre cientifico es Megaceryle torquata.',
     },
     {
-      texto: '¿De qué se alimenta principalmente?',
-      opciones: ['Peces pequeños', 'Semillas', 'Néctar'],
+      texto: 'A que orden pertenece?',
+      opciones: ['Coraciiformes', 'Psittaciformes', 'Passeriformes'],
       correcta: 0,
-      explicacion: 'Su alimento principal son los peces pequeños.',
+      explicacion: 'Segun la guia, pertenece al orden Coraciiformes.',
     },
     {
-      texto: '¿Qué usa para pescar?',
-      opciones: ['Una red de plumas', 'Patas palmeadas', 'Su pico largo y fuerte'],
+      texto: 'A qu feamilia pertenece?',
+      opciones: ['Trochilidae', 'Accipitridae', 'Cerylidae'],
       correcta: 2,
-      explicacion: 'Su pico largo y fuerte le sirve para atrapar a los peces.',
+      explicacion: 'Esta clasificado dentro de la familia Cerylidae.',
     },
     {
-      texto: '¿Dónde se le ve con más frecuencia?',
-      opciones: ['Cerca de ríos y lagos', 'En desiertos', 'En cimas nevadas'],
-      correcta: 0,
-      explicacion: 'Vive cerca del agua: ríos, quebradas y lagos.',
+      texto: 'Cual es su nombre en ingles?',
+      opciones: ['Chestnut-fronted Macaw', 'Ringed Kingfisher', 'Vermilion Flycatcher'],
+      correcta: 1,
+      explicacion: 'En ingles se conoce como Ringed Kingfisher.',
     },
   ],
 }
