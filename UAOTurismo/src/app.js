@@ -3,7 +3,7 @@ const onxrloaded = () => {
     imageTargetData: [
       require('../image-targets/Img1.json'),
       require('../image-targets/Img2.json'),
-      //require('../image-targets/Img3.json'),
+      require('../image-targets/Img3.json'),
       //require('../image-targets/Img4.json'),
       //require('../image-targets/Img5.json'),
     ],

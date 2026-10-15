@@ -150,7 +150,9 @@
         }
       },
       "name": "Menu",
-      "order": 3.8372667056787098
+      "order": 3.8372667056787098,
+      "disabled": true,
+      "hidden": true
     },
     "44a48149-4d3d-45f4-ad04-bf3f48f77cad": {
       "id": "44a48149-4d3d-45f4-ad04-bf3f48f77cad",
@@ -1125,7 +1127,8 @@
         "name": "Img2"
       },
       "order": 3.4826145296300406,
-      "hidden": false
+      "hidden": true,
+      "disabled": true
     },
     "86a952d9-c1bd-4360-bb14-d5da00696463": {
       "id": "86a952d9-c1bd-4360-bb14-d5da00696463",
@@ -2058,15 +2061,17 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "TargetP3",
-      "imageTarget": {},
+      "imageTarget": {
+        "name": "Img3"
+      },
       "order": 3.577730798948715,
-      "disabled": true
+      "hidden": false
     },
     "29e8a0a6-4ee4-4587-91b2-6ef56b73d580": {
       "id": "29e8a0a6-4ee4-4587-91b2-6ef56b73d580",
       "position": [
         0,
-        -0.47853205538222715,
+        -1.1053188673550136,
         0
       ],
       "rotation": [
@@ -2970,44 +2975,6 @@
         "justifyContent": "center"
       },
       "order": 1.3148440303937683
-    },
-    "ebf62299-6735-4ccd-bc90-1fc42bd41151": {
-      "id": "ebf62299-6735-4ccd-bc90-1fc42bd41151",
-      "position": [
-        0,
-        0,
-        1
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.7,
-        0.7,
-        0.7
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/guacamaya_idle.glb"
-        },
-        "animationClip": "Idle",
-        "loop": true
-      },
-      "name": "guacamaya_idle.glb (2)",
-      "order": 3.9665911333765718,
-      "shadow": {
-        "receiveShadow": true,
-        "castShadow": true
-      },
-      "hidden": true
     },
     "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc": {
       "id": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc",
@@ -5813,7 +5780,7 @@
             "audioPechirrojo": "assets/Dacnis_pechirrojo_.mp3",
             "audioPeriquito": "assets/Catita_churica_.mp3",
             "audioAzulejo": "assets/Tangara_azuleja_.mp3",
-            "pistaPechirrojo": "Su canto es agudo y cortico, como un silbidito que sube de tono y termina de repente."
+            "pistaPechirrojo": "Hace varios silbiditos cortos y agudos, uno tras otro, como si estuviera llamando a otro pajarito"
           }
         }
       },
@@ -6718,6 +6685,861 @@
         "marginBottom": 2,
         "gap": 3
       }
+    },
+    "5361d564-622d-45c9-b36e-61908816bbf9": {
+      "id": "5361d564-622d-45c9-b36e-61908816bbf9",
+      "position": [
+        0,
+        -0.21368812358666744,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/colibri_volando.glb"
+        },
+        "animationClip": "Fly",
+        "loop": true,
+        "reverse": true
+      },
+      "name": "colibri_volando.glb",
+      "order": 1.6687826158888408
+    },
+    "aa0be0a1-27bb-4eba-96d6-b88f203192f3": {
+      "id": "aa0be0a1-27bb-4eba-96d6-b88f203192f3",
+      "position": [
+        0,
+        1.252386357498431,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "758a043c-be95-4188-8348-fd5e7d1aa587": {
+          "id": "758a043c-be95-4188-8348-fd5e7d1aa587",
+          "name": "juego-alimentar",
+          "parameters": {
+            "textoMensaje": {
+              "type": "entity",
+              "id": "439a6f54-2e93-4aca-82b8-2df698002d2e"
+            }
+          }
+        }
+      },
+      "ui": {
+        "flexDirection": "column",
+        "width": 100,
+        "height": "100",
+        "type": "3d",
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "borderRadius": 5
+      },
+      "name": "Juego Comida",
+      "order": 7.199305239514752,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92"
+    },
+    "439a6f54-2e93-4aca-82b8-2df698002d2e": {
+      "id": "439a6f54-2e93-4aca-82b8-2df698002d2e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "aa0be0a1-27bb-4eba-96d6-b88f203192f3",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": "100",
+        "height": 30,
+        "text": "Mensaje",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "type": "3d",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "verticalTextAlign": "center"
+      },
+      "name": "Mensaje (1)",
+      "order": 1
+    },
+    "8ebd8997-b1eb-468a-ad78-ee6d8b499f79": {
+      "id": "8ebd8997-b1eb-468a-ad78-ee6d8b499f79",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "879f224f-e0db-44a8-b86c-631a09958ed1": {
+          "id": "879f224f-e0db-44a8-b86c-631a09958ed1",
+          "name": "boton-comida",
+          "parameters": {
+            "accion": "reiniciar"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Reinciar (1)",
+      "order": 2,
+      "parentId": "aa0be0a1-27bb-4eba-96d6-b88f203192f3"
+    },
+    "99049b4b-084e-47cc-81d7-b79d844ae56f": {
+      "id": "99049b4b-084e-47cc-81d7-b79d844ae56f",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8ebd8997-b1eb-468a-ad78-ee6d8b499f79",
+      "components": {},
+      "name": "Icono (51)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 3,
+      "disabled": true
+    },
+    "44d2b740-d0f8-474c-9870-5cf9d20f91df": {
+      "id": "44d2b740-d0f8-474c-9870-5cf9d20f91df",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8ebd8997-b1eb-468a-ad78-ee6d8b499f79",
+      "components": {},
+      "name": "Texto (51)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 50,
+        "height": 15,
+        "text": "Reiniciar",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 4
+    },
+    "380b1e89-a587-488b-8873-28bebd2aa50c": {
+      "id": "380b1e89-a587-488b-8873-28bebd2aa50c",
+      "position": [
+        0,
+        0,
+        -0.9699355850288209
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "aa0be0a1-27bb-4eba-96d6-b88f203192f3",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": "100",
+        "height": 20,
+        "text": "Arrastra la comida hasta el colibrí y mira cómo reacciona.",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "type": "3d",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "verticalTextAlign": "center"
+      },
+      "name": "Instrucciones (1)",
+      "order": -1.5270323923350706
+    },
+    "eb21905a-e40d-4a0f-bfde-e2436ce26260": {
+      "id": "eb21905a-e40d-4a0f-bfde-e2436ce26260",
+      "position": [
+        0.20136678600285524,
+        0.23648021039743639,
+        0.75
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92",
+      "components": {},
+      "name": "Boca",
+      "order": -0.8628149791043436
+    },
+    "bf99dd22-854d-493b-9a1b-43348b0c73f5": {
+      "id": "bf99dd22-854d-493b-9a1b-43348b0c73f5",
+      "position": [
+        -0.5,
+        0,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "c7605218-60cf-467d-b1fe-c9526b571eba": {
+          "id": "c7605218-60cf-467d-b1fe-c9526b571eba",
+          "name": "comida-arrastrable",
+          "parameters": {
+            "valor": "flor",
+            "zona": {
+              "type": "entity",
+              "id": "eb21905a-e40d-4a0f-bfde-e2436ce26260"
+            }
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 40,
+        "height": 40,
+        "background": "#292929",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Op1 - Flor",
+      "order": 5.821567646421766,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92"
+    },
+    "462b42c6-1a82-4757-af42-480da5539660": {
+      "id": "462b42c6-1a82-4757-af42-480da5539660",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bf99dd22-854d-493b-9a1b-43348b0c73f5",
+      "components": {},
+      "name": "Icono (52)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "asset",
+          "asset": "assets/flor.jpg"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 1
+    },
+    "6737edfa-a1b2-4870-a589-d70ac94670cf": {
+      "id": "6737edfa-a1b2-4870-a589-d70ac94670cf",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bf99dd22-854d-493b-9a1b-43348b0c73f5",
+      "components": {},
+      "name": "Texto (52)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 70,
+        "height": 15,
+        "text": "Audio 3",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2,
+      "disabled": true
+    },
+    "ce86b386-5a88-43f2-ac98-40aad13436bf": {
+      "id": "ce86b386-5a88-43f2-ac98-40aad13436bf",
+      "position": [
+        0.5,
+        0,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "090fd65a-c1da-42e1-b2a8-dda084b9e6f2": {
+          "id": "090fd65a-c1da-42e1-b2a8-dda084b9e6f2",
+          "name": "comida-arrastrable",
+          "parameters": {
+            "valor": "bebedero",
+            "zona": {
+              "type": "entity",
+              "id": "eb21905a-e40d-4a0f-bfde-e2436ce26260"
+            }
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 40,
+        "height": 40,
+        "background": "#292929",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Op2 - Bebedero",
+      "order": 5.835396611692706,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92"
+    },
+    "9fba5417-9042-48e2-b5c0-39f954b7ca18": {
+      "id": "9fba5417-9042-48e2-b5c0-39f954b7ca18",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "ce86b386-5a88-43f2-ac98-40aad13436bf",
+      "components": {},
+      "name": "Icono (53)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "asset",
+          "asset": "assets/bebedero.jpg"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 1
+    },
+    "1cd50fb1-f065-42fe-908d-2533799f3bc9": {
+      "id": "1cd50fb1-f065-42fe-908d-2533799f3bc9",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "ce86b386-5a88-43f2-ac98-40aad13436bf",
+      "components": {},
+      "name": "Texto (53)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 70,
+        "height": 15,
+        "text": "Audio 3",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2,
+      "disabled": true
+    },
+    "443b2ec9-4a16-4eff-903b-7c0747752bb4": {
+      "id": "443b2ec9-4a16-4eff-903b-7c0747752bb4",
+      "position": [
+        0,
+        0.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "7679584e-2441-4267-a7ae-e1136b0490fc": {
+          "id": "7679584e-2441-4267-a7ae-e1136b0490fc",
+          "name": "comida-arrastrable",
+          "parameters": {
+            "valor": "insectos",
+            "zona": {
+              "type": "entity",
+              "id": "eb21905a-e40d-4a0f-bfde-e2436ce26260"
+            }
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 40,
+        "height": 40,
+        "background": "#292929",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Op3 - Insectos",
+      "order": 5.849225576963646,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92"
+    },
+    "acf1a44d-1457-4634-bbc4-05538b0c2acd": {
+      "id": "acf1a44d-1457-4634-bbc4-05538b0c2acd",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "443b2ec9-4a16-4eff-903b-7c0747752bb4",
+      "components": {},
+      "name": "Icono (54)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "asset",
+          "asset": "assets/lombriz.jpg"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 1
+    },
+    "62e3eb4d-9bca-4242-ab0f-e90f407426e8": {
+      "id": "62e3eb4d-9bca-4242-ab0f-e90f407426e8",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "443b2ec9-4a16-4eff-903b-7c0747752bb4",
+      "components": {},
+      "name": "Texto (54)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 70,
+        "height": 15,
+        "text": "Audio 3",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2,
+      "disabled": true
+    },
+    "975b6818-291b-4afc-8afd-3910750caee4": {
+      "id": "975b6818-291b-4afc-8afd-3910750caee4",
+      "position": [
+        0,
+        -0.5,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "8459d484-a878-4439-8a24-b9dcb6c61231": {
+          "id": "8459d484-a878-4439-8a24-b9dcb6c61231",
+          "name": "comida-arrastrable",
+          "parameters": {
+            "valor": "pan",
+            "zona": {
+              "type": "entity",
+              "id": "eb21905a-e40d-4a0f-bfde-e2436ce26260"
+            }
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 40,
+        "height": 40,
+        "background": "#292929",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Op4 - Pan",
+      "order": 5.863054542234587,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92"
+    },
+    "ed7fa08c-99f1-4853-9fd0-da5eb622e5e3": {
+      "id": "ed7fa08c-99f1-4853-9fd0-da5eb622e5e3",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "975b6818-291b-4afc-8afd-3910750caee4",
+      "components": {},
+      "name": "Icono (55)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "asset",
+          "asset": "assets/pan.jpg"
+        },
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain"
+      },
+      "order": 1
+    },
+    "9fcb4f3f-7eb5-4529-9198-d9f23c0f4be5": {
+      "id": "9fcb4f3f-7eb5-4529-9198-d9f23c0f4be5",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "975b6818-291b-4afc-8afd-3910750caee4",
+      "components": {},
+      "name": "Texto (55)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 70,
+        "height": 15,
+        "text": "Audio 3",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2,
+      "disabled": true
     }
   },
   "spaces": {
