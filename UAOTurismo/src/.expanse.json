@@ -119,7 +119,7 @@
       },
       "order": 2.5918040798150734,
       "disabled": true,
-      "hidden": true
+      "hidden": false
     },
     "d3fcbb9a-48e0-4d15-b935-3e38045fecbe": {
       "id": "d3fcbb9a-48e0-4d15-b935-3e38045fecbe",
@@ -1059,46 +1059,6 @@
       },
       "order": 1.3148440303937683
     },
-    "7a0189dd-f16c-4f2a-a02f-59a3a6b30007": {
-      "id": "7a0189dd-f16c-4f2a-a02f-59a3a6b30007",
-      "position": [
-        0,
-        0,
-        0.5
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.7,
-        0.7,
-        0.7
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/guacamaya_idle.glb"
-        },
-        "animationClip": "Idle",
-        "loop": true,
-        "paused": false,
-        "reverse": false
-      },
-      "name": "guacamaya_idle.glb",
-      "order": 3.9665911333765718,
-      "shadow": {
-        "receiveShadow": false,
-        "castShadow": true
-      },
-      "hidden": false
-    },
     "8d5228f0-2674-463c-940c-fd855cc3b27a": {
       "id": "8d5228f0-2674-463c-940c-fd855cc3b27a",
       "position": [
@@ -1126,7 +1086,7 @@
         "name": "Img2"
       },
       "order": 3.4826145296300406,
-      "hidden": true,
+      "hidden": false,
       "disabled": true
     },
     "86a952d9-c1bd-4360-bb14-d5da00696463": {
@@ -2065,7 +2025,7 @@
       },
       "order": 3.577730798948715,
       "disabled": true,
-      "hidden": true
+      "hidden": false
     },
     "29e8a0a6-4ee4-4587-91b2-6ef56b73d580": {
       "id": "29e8a0a6-4ee4-4587-91b2-6ef56b73d580",
@@ -2999,7 +2959,9 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
       "name": "TargetP4 - Gavilan",
-      "imageTarget": {},
+      "imageTarget": {
+        "name": "Img4"
+      },
       "order": 3.7345681010628784,
       "hidden": false
     },
@@ -3972,10 +3934,13 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "TargetP5",
-      "imageTarget": {},
+      "name": "TargetP5 - Pescador",
+      "imageTarget": {
+        "name": "Img5"
+      },
       "order": 3.7822466552784144,
-      "disabled": true
+      "disabled": true,
+      "hidden": false
     },
     "bba13238-3954-44f9-82fa-16870dcc6901": {
       "id": "bba13238-3954-44f9-82fa-16870dcc6901",
@@ -4885,44 +4850,6 @@
         "justifyContent": "center"
       },
       "order": 1.3148440303937683
-    },
-    "0b50b318-60df-4b44-9a13-15c429b83563": {
-      "id": "0b50b318-60df-4b44-9a13-15c429b83563",
-      "position": [
-        0,
-        0,
-        1
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.7,
-        0.7,
-        0.7
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/guacamaya_idle.glb"
-        },
-        "animationClip": "Idle",
-        "loop": true
-      },
-      "name": "guacamaya_idle.glb (4)",
-      "order": 3.9665911333765718,
-      "shadow": {
-        "receiveShadow": true,
-        "castShadow": true
-      },
-      "hidden": true
     },
     "956ca017-1f7e-4d9c-8041-3648f4a733cc": {
       "id": "956ca017-1f7e-4d9c-8041-3648f4a733cc",
@@ -7540,6 +7467,106 @@
       },
       "order": 2,
       "disabled": true
+    },
+    "c592f59f-0714-43c0-a817-e6a8ede9bce5": {
+      "id": "c592f59f-0714-43c0-a817-e6a8ede9bce5",
+      "position": [
+        0,
+        -0.2875715642926992,
+        0.18405315291541158
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
+      "components": {
+        "acb0da4f-e3c3-4a4e-a634-a17349dea481": {
+          "id": "acb0da4f-e3c3-4a4e-a634-a17349dea481",
+          "name": "avanzar-ave",
+          "parameters": {}
+        }
+      },
+      "name": "Pajaro",
+      "order": 0.2859325839383515
+    },
+    "3f69993c-8143-470a-9e40-154cd667451b": {
+      "id": "3f69993c-8143-470a-9e40-154cd667451b",
+      "position": [
+        -0.01850632753463438,
+        -0.0781597590916161,
+        0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/guacamaya_verde_idle_HD.glb"
+        },
+        "animationClip": "Idle",
+        "loop": true
+      },
+      "name": "guacamaya_verde_idle_HD.glb",
+      "order": 2.8269893691141372,
+      "shadow": {
+        "receiveShadow": true
+      }
+    },
+    "c68c1257-4c8f-43b1-986a-2969fb1c632d": {
+      "id": "c68c1257-4c8f-43b1-986a-2969fb1c632d",
+      "position": [
+        0,
+        0,
+        -0.8442866701166335
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c592f59f-0714-43c0-a817-e6a8ede9bce5",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/martin_pescador_volando_HD.glb"
+        },
+        "animationClip": "Fly",
+        "loop": true
+      },
+      "name": "martin_pescador_volando_HD.glb",
+      "order": 7.153579020279458
     }
   },
   "spaces": {
