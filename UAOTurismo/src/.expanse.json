@@ -2060,12 +2060,13 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "TargetP3",
+      "name": "TargetP3 - Colibrí",
       "imageTarget": {
         "name": "Img3"
       },
       "order": 3.577730798948715,
-      "hidden": false
+      "disabled": true,
+      "hidden": true
     },
     "29e8a0a6-4ee4-4587-91b2-6ef56b73d580": {
       "id": "29e8a0a6-4ee4-4587-91b2-6ef56b73d580",
@@ -2998,10 +2999,10 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "TargetP4",
+      "name": "TargetP4 - Gavilan",
       "imageTarget": {},
       "order": 3.7345681010628784,
-      "disabled": true
+      "hidden": false
     },
     "594bc724-f1c1-4803-9f8f-8cf95ed56157": {
       "id": "594bc724-f1c1-4803-9f8f-8cf95ed56157",
