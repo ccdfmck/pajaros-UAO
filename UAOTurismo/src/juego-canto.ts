@@ -1,15 +1,16 @@
 import * as ecs from '@8thwall/ecs'
 
-type Ave = 'pechirrojo' | 'guacamaya' | 'otro'
+type Ave = 'pechirrojo' | 'periquito' | 'azulejo'
+
+const TODAS: Ave[] = ['pechirrojo', 'periquito', 'azulejo']
 
 type Estado = {
-  orden: Ave[]
-  ronda: number
-  aciertos: number
-  pistas: number
+  orden: Ave[]          // orden[0] es lo que suena como "Audio 1", etc.
   escucho: boolean
   respondida: boolean
+  pistaUsada: boolean
   sonando: bigint | null
+  token: number         // para cancelar la secuencia si se reinicia o se responde
   oyente: (e: any) => void
 }
 
@@ -28,44 +29,34 @@ ecs.registerComponent({
   name: 'juego-canto',
   schema: {
     juego: ecs.string,
-    textoMensaje: ecs.eid,        // el hijo Texto donde se muestran los mensajes
+    textoMensaje: ecs.eid,
     // @asset
     audioPechirrojo: ecs.string,
     // @asset
-    audioGuacamaya: ecs.string,
+    audioPeriquito: ecs.string,
     // @asset
-    audioOtro: ecs.string,
-    nombreOtro: ecs.string,
+    audioAzulejo: ecs.string,
     pistaPechirrojo: ecs.string,
-    pistaGuacamaya: ecs.string,
-    pistaOtro: ecs.string,
   },
   schemaDefaults: {
     juego: 'pechirrojo',
-    nombreOtro: 'Azulejo',
-    pistaPechirrojo: 'Silbido corto que se repite, desde un poste o una rama baja.',
-    pistaGuacamaya: 'Graznido muy fuerte y áspero, que se oye de lejos.',
-    pistaOtro: 'Trinos suaves y agudos, como una melodía corta.',
+    pistaPechirrojo: 'Escribe aquí una característica del canto del pechirrojo.',
   },
   add: (world, component) => {
     // copiamos TODO al iniciar
     const juego = component.schema.juego
     const eid = component.eid
     const msgEid = component.schema.textoMensaje
+    const pista = component.schema.pistaPechirrojo
     const audios: Record<Ave, string> = {
       pechirrojo: component.schema.audioPechirrojo,
-      guacamaya: component.schema.audioGuacamaya,
-      otro: component.schema.audioOtro,
+      periquito: component.schema.audioPeriquito,
+      azulejo: component.schema.audioAzulejo,
     }
     const nombres: Record<Ave, string> = {
       pechirrojo: 'Pechirrojo',
-      guacamaya: 'Guacamaya',
-      otro: component.schema.nombreOtro,
-    }
-    const pistas: Record<Ave, string> = {
-      pechirrojo: component.schema.pistaPechirrojo,
-      guacamaya: component.schema.pistaGuacamaya,
-      otro: component.schema.pistaOtro,
+      periquito: 'Periquito barbinaranja',
+      azulejo: 'Azulejo',
     }
     console.log('juego-canto listo:', juego, audios)
 
@@ -74,94 +65,88 @@ ecs.registerComponent({
     }
 
     const s: Estado = {
-      orden: [], ronda: 0, aciertos: 0, pistas: 0,
-      escucho: false, respondida: false, sonando: null,
-      oyente: () => {},
+      orden: [], escucho: false, respondida: false, pistaUsada: false,
+      sonando: null, token: 0, oyente: () => {},
     }
 
     const detener = () => {
+      s.token++   // invalida cualquier secuencia en curso
       if (s.sonando !== null) {
         try { world.deleteEntity(s.sonando) } catch (e) { /* ya no existe */ }
         s.sonando = null
       }
     }
 
-    const sonar = () => {
-      detener()
-      const url = audios[s.orden[s.ronda]]
+    // Reproduce el audio i (0, 1, 2) y al terminar pasa al siguiente
+    const reproducir = (i: number, token: number) => {
+      if (token !== s.token) return
+      if (i >= s.orden.length) {
+        mostrar('Listo. ¿Cuál era el canto del pechirrojo? Elige Audio 1, Audio 2 o Audio 3.')
+        return
+      }
+      mostrar('Sonando: Audio ' + (i + 1))
       const e = world.createEntity()
-      ecs.Audio.set(world, e, {url, volume: 1, loop: false, paused: false})
+      ecs.Audio.set(world, e, {url: audios[s.orden[i]], volume: 1, loop: false, paused: false})
       s.sonando = e
       world.events.addListener(e, ecs.events.AUDIO_END, () => {
         try { world.deleteEntity(e) } catch (err) { /* ya no existe */ }
         if (s.sonando === e) s.sonando = null
+        setTimeout(() => reproducir(i + 1, token), 600)
       })
     }
 
     const iniciar = () => {
       detener()
-      s.orden = barajar(['pechirrojo', 'guacamaya', 'otro'])
-      s.ronda = 0
-      s.aciertos = 0
-      s.pistas = 0
+      s.orden = ['azulejo', 'periquito', 'pechirrojo']
       s.escucho = false
       s.respondida = false
-      mostrar('Toca Escuchar y adivina de qué pájaro es el canto. (Ronda 1 de 3)')
+      s.pistaUsada = false
+      mostrar('Pista: ' + pista + '  Toca Escuchar para oír los 3 audios y elige cuál es el pechirrojo.')
     }
 
     const pedirPista = () => {
-      if (s.ronda >= s.orden.length) return
-      if (!s.escucho) { mostrar('Primero toca Escuchar.'); return }
       if (s.respondida) return
-      const correcta = s.orden[s.ronda]
-      s.pistas++
-      if (s.pistas === 1) {
-        mostrar('Pista: ' + pistas[correcta])
-      } else if (s.pistas === 2) {
-        const incorrectas = (['pechirrojo', 'guacamaya', 'otro'] as Ave[]).filter(a => a !== correcta)
-        const descartada = incorrectas[Math.floor(Math.random() * incorrectas.length)]
-        mostrar('Pista: NO es el ' + nombres[descartada] + '.')
+      if (!s.escucho) { mostrar('Pista: ' + pista); return }
+      if (!s.pistaUsada) {
+        s.pistaUsada = true
+        const malos: number[] = []
+        s.orden.forEach((a, i) => { if (a !== 'pechirrojo') malos.push(i) })
+        const d = malos[Math.floor(Math.random() * malos.length)]
+        mostrar('Pista extra: el Audio ' + (d + 1) + ' NO es el pechirrojo.')
       } else {
-        mostrar('Ya no hay más pistas. Toca Escuchar de nuevo.')
+        mostrar('Pista: ' + pista)
       }
     }
 
-    const responder = (elegida: Ave) => {
-      if (s.ronda >= s.orden.length) return
+    const responder = (pos: number) => {
       if (!s.escucho) { mostrar('Primero toca Escuchar.'); return }
       if (s.respondida) return
-      const correcta = s.orden[s.ronda]
+      if (pos < 1 || pos > s.orden.length) return
+      detener()
       s.respondida = true
+      const correcta = s.orden.indexOf('pechirrojo') + 1
+      const lista = s.orden.map((a, i) => 'Audio ' + (i + 1) + ' = ' + nombres[a]).join(', ')
       let msg = ''
-      if (elegida === correcta) {
-        s.aciertos++
-        msg = '¡Correcto! Era el ' + nombres[correcta] + '. ' + pistas[correcta]
+      if (pos === correcta) {
+        msg = '¡Correcto! El Audio ' + pos + ' es el canto del pechirrojo.'
       } else {
-        msg = 'Casi. Era el ' + nombres[correcta] + ', no el ' + nombres[elegida] + '. ' + pistas[correcta]
+        msg = 'Casi. El canto del pechirrojo era el Audio ' + correcta + ', no el Audio ' + pos + '.'
       }
-      s.ronda++
-      if (s.ronda >= s.orden.length) {
-        msg += '  Resultado: ' + s.aciertos + ' de ' + s.orden.length + '. Toca Reiniciar para jugar otra vez.'
-      } else {
-        msg += '  Toca Escuchar para la ronda ' + (s.ronda + 1) + '.'
-        s.escucho = false
-        s.respondida = false
-        s.pistas = 0
-      }
-      mostrar(msg)
+      mostrar(msg + '  Así sonaban: ' + lista + '. Toca Reiniciar para jugar de nuevo.')
     }
 
     s.oyente = (ev: any) => {
       const d = ev.data
       if (!d || d.juego !== juego) return
       if (d.accion === 'escuchar') {
-        if (s.ronda >= s.orden.length) { mostrar('Se acabó el juego. Toca Reiniciar.'); return }
+        if (s.respondida) { mostrar('Ya respondiste. Toca Reiniciar para jugar de nuevo.'); return }
+        detener()
         s.escucho = true
-        sonar()
+        reproducir(0, s.token)
       } else if (d.accion === 'pista') {
         pedirPista()
       } else if (d.accion === 'opcion') {
-        responder(d.valor as Ave)
+        responder(parseInt(d.valor, 10))
       } else if (d.accion === 'reiniciar') {
         iniciar()
       }
@@ -175,6 +160,7 @@ ecs.registerComponent({
     const s = estados.get(component.eid)
     if (s) {
       world.events.removeListener(world.events.globalId, 'canto-boton', s.oyente)
+      s.token++
       if (s.sonando !== null) {
         try { world.deleteEntity(s.sonando) } catch (e) { /* ya no existe */ }
       }

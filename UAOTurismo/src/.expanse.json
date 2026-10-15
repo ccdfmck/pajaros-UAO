@@ -361,8 +361,6 @@
         }
       },
       "ui": {
-        "borderColor": "#ffffff",
-        "borderWidth": 1,
         "flexDirection": "column",
         "width": 150,
         "height": 250,
@@ -374,7 +372,8 @@
         "alignItems": "center",
         "justifyContent": "center",
         "opacity": 1,
-        "flexWrap": "nowrap"
+        "flexWrap": "nowrap",
+        "borderRadius": 5
       },
       "name": "Panel Quiz",
       "order": 4.308179299611534,
@@ -1339,8 +1338,6 @@
         }
       },
       "ui": {
-        "borderColor": "#ffffff",
-        "borderWidth": 1,
         "flexDirection": "column",
         "width": 150,
         "height": 250,
@@ -1352,7 +1349,8 @@
         "alignItems": "center",
         "justifyContent": "center",
         "opacity": 1,
-        "flexWrap": "nowrap"
+        "flexWrap": "nowrap",
+        "borderRadius": 5
       },
       "name": "Panel Quiz (1)",
       "order": 4.308179299611534,
@@ -5762,9 +5760,9 @@
         1
       ],
       "scale": [
-        0.5,
-        0.5,
-        0.5
+        0.3,
+        0.3,
+        0.3
       ],
       "geometry": null,
       "material": null,
@@ -5775,11 +5773,951 @@
           "type": "asset",
           "asset": "assets/petirrojo_volando.glb"
         },
-        "animationClip": "",
+        "animationClip": "Fly",
         "loop": true
       },
       "name": "petirrojo_volando.glb",
-      "order": 1.0039295782598376
+      "order": 1.0039295782598376,
+      "hidden": false
+    },
+    "3b35b9fa-5b07-481d-9135-986f37c15cc1": {
+      "id": "3b35b9fa-5b07-481d-9135-986f37c15cc1",
+      "position": [
+        -1.2374044008583973,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8d5228f0-2674-463c-940c-fd855cc3b27a",
+      "components": {
+        "6cbcf0e5-c1e2-456b-b4f9-acd90470db79": {
+          "id": "6cbcf0e5-c1e2-456b-b4f9-acd90470db79",
+          "name": "juego-canto",
+          "parameters": {
+            "textoMensaje": {
+              "type": "entity",
+              "id": "b4c33502-681e-468e-b16f-7096c18f62ab"
+            },
+            "audioPechirrojo": "assets/Dacnis_pechirrojo_.mp3",
+            "audioPeriquito": "assets/Catita_churica_.mp3",
+            "audioAzulejo": "assets/Tangara_azuleja_.mp3",
+            "pistaPechirrojo": "Su canto es agudo y cortico, como un silbidito que sube de tono y termina de repente."
+          }
+        }
+      },
+      "ui": {
+        "flexDirection": "column",
+        "width": 150,
+        "height": 250,
+        "type": "3d",
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "borderRadius": 5
+      },
+      "name": "Juego Canto",
+      "order": 6.863730241386414
+    },
+    "b4c33502-681e-468e-b16f-7096c18f62ab": {
+      "id": "b4c33502-681e-468e-b16f-7096c18f62ab",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3b35b9fa-5b07-481d-9135-986f37c15cc1",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": "100",
+        "height": 30,
+        "text": "Mensaje",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "type": "3d",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2
+      },
+      "name": "Mensaje",
+      "order": 5.056294873724901
+    },
+    "27264197-fe7e-4dae-8acc-d8b552c81c08": {
+      "id": "27264197-fe7e-4dae-8acc-d8b552c81c08",
+      "position": [
+        0,
+        0,
+        0.9699355850288209
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "ade68d32-03b6-45a4-b022-b74ce1ad4893": {
+          "id": "ade68d32-03b6-45a4-b022-b74ce1ad4893",
+          "name": "boton-canto",
+          "parameters": {
+            "accion": "escuchar"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Escuchar",
+      "order": 6.067944385536277,
+      "parentId": "7993a27b-bda3-4425-8124-878fa3b3bb8b"
+    },
+    "9887d8e7-3942-48a3-bef0-a9506860cc98": {
+      "id": "9887d8e7-3942-48a3-bef0-a9506860cc98",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "27264197-fe7e-4dae-8acc-d8b552c81c08",
+      "components": {},
+      "name": "Icono (45)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 1,
+      "disabled": true
+    },
+    "29488cea-d2ba-47e5-9ca2-fc08d2b1e803": {
+      "id": "29488cea-d2ba-47e5-9ca2-fc08d2b1e803",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "27264197-fe7e-4dae-8acc-d8b552c81c08",
+      "components": {},
+      "name": "Texto (45)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 50,
+        "height": 15,
+        "text": "Escuchar",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2
+    },
+    "8742fd0c-d49e-49d7-8c50-457dbd0a2daf": {
+      "id": "8742fd0c-d49e-49d7-8c50-457dbd0a2daf",
+      "position": [
+        0,
+        0,
+        0.9699355850288209
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "520df111-f646-454a-b69d-9bcd1b95ca77": {
+          "id": "520df111-f646-454a-b69d-9bcd1b95ca77",
+          "name": "boton-canto",
+          "parameters": {
+            "accion": "pista"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Pista",
+      "order": 7.484949134150316,
+      "parentId": "7993a27b-bda3-4425-8124-878fa3b3bb8b"
+    },
+    "28312365-dd99-46f6-948b-4fdf5bd45b51": {
+      "id": "28312365-dd99-46f6-948b-4fdf5bd45b51",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8742fd0c-d49e-49d7-8c50-457dbd0a2daf",
+      "components": {},
+      "name": "Icono (46)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 1,
+      "disabled": true
+    },
+    "297b934d-aa8b-44ae-a88b-9e36e410720c": {
+      "id": "297b934d-aa8b-44ae-a88b-9e36e410720c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8742fd0c-d49e-49d7-8c50-457dbd0a2daf",
+      "components": {},
+      "name": "Texto (46)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 50,
+        "height": 15,
+        "text": "Pista",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2
+    },
+    "3cb470dc-31d7-41ef-bcca-68075dcc4ef3": {
+      "id": "3cb470dc-31d7-41ef-bcca-68075dcc4ef3",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "623ac016-726e-4348-9dc3-218b9579b4f9": {
+          "id": "623ac016-726e-4348-9dc3-218b9579b4f9",
+          "name": "boton-canto",
+          "parameters": {
+            "accion": "reiniciar"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Reinciar",
+      "order": 8.98201462973516,
+      "parentId": "3b35b9fa-5b07-481d-9135-986f37c15cc1"
+    },
+    "fd0d0ad0-7e77-4807-8702-6ea5bc32263d": {
+      "id": "fd0d0ad0-7e77-4807-8702-6ea5bc32263d",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3cb470dc-31d7-41ef-bcca-68075dcc4ef3",
+      "components": {},
+      "name": "Icono (47)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 1,
+      "disabled": true
+    },
+    "0de51d04-2cf2-4f53-b56b-d18aef5026f0": {
+      "id": "0de51d04-2cf2-4f53-b56b-d18aef5026f0",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3cb470dc-31d7-41ef-bcca-68075dcc4ef3",
+      "components": {},
+      "name": "Texto (47)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 50,
+        "height": 15,
+        "text": "Reiniciar",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2
+    },
+    "e4b329fb-1e7e-4014-8bec-df0530ee3a49": {
+      "id": "e4b329fb-1e7e-4014-8bec-df0530ee3a49",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "95ac0fc7-9a92-4b6e-a7fe-81835e48d524": {
+          "id": "95ac0fc7-9a92-4b6e-a7fe-81835e48d524",
+          "name": "boton-canto",
+          "parameters": {
+            "accion": "opcion",
+            "valor": "1"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 70,
+        "height": 15,
+        "background": "#526b50",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Op1 - Pechirrojo",
+      "order": 8.224178923282356,
+      "parentId": "3b35b9fa-5b07-481d-9135-986f37c15cc1"
+    },
+    "ce1a1bb8-01c5-4a4d-8c15-cb4535cbecdd": {
+      "id": "ce1a1bb8-01c5-4a4d-8c15-cb4535cbecdd",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e4b329fb-1e7e-4014-8bec-df0530ee3a49",
+      "components": {},
+      "name": "Icono (48)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 1,
+      "disabled": true
+    },
+    "32f28572-b4fe-4f77-8510-31d3cff6f64f": {
+      "id": "32f28572-b4fe-4f77-8510-31d3cff6f64f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e4b329fb-1e7e-4014-8bec-df0530ee3a49",
+      "components": {},
+      "name": "Texto (48)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 70,
+        "height": 15,
+        "text": "Audio 1\n",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2
+    },
+    "c51f3224-ee9f-46cc-a1de-ce9358f26b67": {
+      "id": "c51f3224-ee9f-46cc-a1de-ce9358f26b67",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "048008f0-7869-4501-92d5-b6783e584311": {
+          "id": "048008f0-7869-4501-92d5-b6783e584311",
+          "name": "boton-canto",
+          "parameters": {
+            "accion": "opcion",
+            "valor": "2"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 70,
+        "height": 15,
+        "background": "#c6a15b",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Op2 - Periquito",
+      "order": 8.626153453904799,
+      "parentId": "3b35b9fa-5b07-481d-9135-986f37c15cc1"
+    },
+    "b157b670-ab65-475b-9cfc-e55a4e4573b8": {
+      "id": "b157b670-ab65-475b-9cfc-e55a4e4573b8",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c51f3224-ee9f-46cc-a1de-ce9358f26b67",
+      "components": {},
+      "name": "Icono (49)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 1,
+      "disabled": true
+    },
+    "9bd4428b-f73e-419f-badd-a9341359f655": {
+      "id": "9bd4428b-f73e-419f-badd-a9341359f655",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c51f3224-ee9f-46cc-a1de-ce9358f26b67",
+      "components": {},
+      "name": "Texto (49)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 70,
+        "height": 15,
+        "text": "Audio 2",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2
+    },
+    "7bee1060-b594-47fe-a569-566ea2a546fd": {
+      "id": "7bee1060-b594-47fe-a569-566ea2a546fd",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "f4f425b5-f142-4511-a6b3-1d66d2b39df1": {
+          "id": "f4f425b5-f142-4511-a6b3-1d66d2b39df1",
+          "name": "boton-canto",
+          "parameters": {
+            "accion": "opcion",
+            "valor": "3"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 70,
+        "height": 15,
+        "background": "#292929",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Op3 - Azulejo",
+      "order": 8.83351999363655,
+      "parentId": "3b35b9fa-5b07-481d-9135-986f37c15cc1"
+    },
+    "5f2e0b3a-27a0-45c9-ab86-940759710209": {
+      "id": "5f2e0b3a-27a0-45c9-ab86-940759710209",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "7bee1060-b594-47fe-a569-566ea2a546fd",
+      "components": {},
+      "name": "Icono (50)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 1,
+      "disabled": true
+    },
+    "db2d530c-5337-4e57-b127-98f5b0d07c86": {
+      "id": "db2d530c-5337-4e57-b127-98f5b0d07c86",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "7bee1060-b594-47fe-a569-566ea2a546fd",
+      "components": {},
+      "name": "Texto (50)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 70,
+        "height": 15,
+        "text": "Audio 3",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 2
+    },
+    "301a7398-a083-4007-8d09-61733a5d9d17": {
+      "id": "301a7398-a083-4007-8d09-61733a5d9d17",
+      "position": [
+        0,
+        0,
+        -0.9699355850288209
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3b35b9fa-5b07-481d-9135-986f37c15cc1",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": "100",
+        "height": 20,
+        "text": "Escucha el canto, elige de qué pájaro es y gana puntos. ¿Dudas? Usa la Pista.",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "type": "3d",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2
+      },
+      "name": "Instrucciones",
+      "order": 2.8779717145014647
+    },
+    "7993a27b-bda3-4425-8124-878fa3b3bb8b": {
+      "id": "7993a27b-bda3-4425-8124-878fa3b3bb8b",
+      "position": [
+        0,
+        0,
+        -0.9699355850288209
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3b35b9fa-5b07-481d-9135-986f37c15cc1",
+      "components": {},
+      "name": "Objeto vacío",
+      "order": 5.602099769556124,
+      "ui": {
+        "flexDirection": "row",
+        "type": "3d",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "width": 20,
+        "height": 20,
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "gap": 3
+      }
     }
   },
   "spaces": {
