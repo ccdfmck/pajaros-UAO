@@ -28,47 +28,6 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.4038940050501252
     },
-    "729478ae-d067-4e0c-a753-66c2e9efb625": {
-      "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        }
-      },
-      "geometry": {
-        "depth": 1,
-        "height": 1,
-        "type": "box",
-        "width": 1
-      },
-      "id": "729478ae-d067-4e0c-a753-66c2e9efb625",
-      "material": {
-        "color": "#7611b6",
-        "type": "basic",
-        "textureFiltering": "sharp"
-      },
-      "name": "Box",
-      "position": [
-        0,
-        0.5,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.5,
-        0.5,
-        0.5
-      ],
-      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
-      "order": 1.4038940050501252,
-      "hidden": false
-    },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
         "type": "perspective",
@@ -154,11 +113,13 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "TargetP1",
+      "name": "TargetP1 - Guacamaya",
       "imageTarget": {
         "name": "Img1"
       },
-      "order": 2.5918040798150734
+      "order": 2.5918040798150734,
+      "disabled": true,
+      "hidden": true
     },
     "d3fcbb9a-48e0-4d15-b935-3e38045fecbe": {
       "id": "d3fcbb9a-48e0-4d15-b935-3e38045fecbe",
@@ -1085,6 +1046,863 @@
         "height": 10,
         "text": "X",
         "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "7a0189dd-f16c-4f2a-a02f-59a3a6b30007": {
+      "id": "7a0189dd-f16c-4f2a-a02f-59a3a6b30007",
+      "position": [
+        0,
+        0,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/guacamaya_idle.glb"
+        },
+        "animationClip": "Idle",
+        "loop": true,
+        "paused": false,
+        "reverse": false
+      },
+      "name": "guacamaya_idle.glb",
+      "order": 3.9665911333765718,
+      "shadow": {
+        "receiveShadow": false,
+        "castShadow": true
+      },
+      "hidden": false
+    },
+    "8d5228f0-2674-463c-940c-fd855cc3b27a": {
+      "id": "8d5228f0-2674-463c-940c-fd855cc3b27a",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "TargetP2 - Pechirojo",
+      "imageTarget": {
+        "name": "Img2"
+      },
+      "order": 3.4826145296300406,
+      "hidden": false
+    },
+    "86a952d9-c1bd-4360-bb14-d5da00696463": {
+      "id": "86a952d9-c1bd-4360-bb14-d5da00696463",
+      "position": [
+        0,
+        -0.47853205538222715,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8d5228f0-2674-463c-940c-fd855cc3b27a",
+      "components": {
+        "128f0daa-c6e0-44ae-b5c8-482023a5b963": {
+          "id": "128f0daa-c6e0-44ae-b5c8-482023a5b963",
+          "name": "boton-quiz",
+          "parameters": {
+            "pajaro": "pajaro2"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón Quiz (1)",
+      "order": 5.3438831616961835,
+      "hidden": false
+    },
+    "369dae80-45a8-43d0-91ec-9cbd6e96e536": {
+      "id": "369dae80-45a8-43d0-91ec-9cbd6e96e536",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "86a952d9-c1bd-4360-bb14-d5da00696463",
+      "components": {},
+      "name": "Icono (13)",
+      "ui": {
+        "flexDirection": "row-reverse",
+        "width": 16,
+        "height": 16,
+        "image": null,
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 0,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 0.41012655607609094,
+      "disabled": true
+    },
+    "e9ca74fe-1ba8-487b-873c-cbd97e6da574": {
+      "id": "e9ca74fe-1ba8-487b-873c-cbd97e6da574",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "86a952d9-c1bd-4360-bb14-d5da00696463",
+      "components": {
+        "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7": {
+          "id": "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7",
+          "name": "boton-quiz",
+          "parameters": {}
+        }
+      },
+      "name": "Texto (13)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 14,
+        "text": "Iniciemos el Quiz",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "margin": "",
+        "marginTop": 1,
+        "marginBottom": 1,
+        "marginLeft": 1,
+        "marginRight": 1,
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "order": 1.2347420341272946
+    },
+    "e0d19cc7-101d-4d3a-9ce1-7440990491a0": {
+      "id": "e0d19cc7-101d-4d3a-9ce1-7440990491a0",
+      "position": [
+        1.503316433410972,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8d5228f0-2674-463c-940c-fd855cc3b27a",
+      "components": {
+        "958456a9-ba23-4caf-8169-74661462cd4c": {
+          "id": "958456a9-ba23-4caf-8169-74661462cd4c",
+          "name": "quiz-nativo",
+          "parameters": {
+            "pregunta": {
+              "type": "entity",
+              "id": "2c5fab3f-32d5-4868-b05a-5b5f793b461f"
+            },
+            "opcion1": {
+              "type": "entity",
+              "id": "15a2fa27-3374-44ae-a628-907bca2b0e63"
+            },
+            "opcion2": {
+              "type": "entity",
+              "id": "36ceb5c6-11ff-49ce-8520-a1b93f2196c5"
+            },
+            "opcion3": {
+              "type": "entity",
+              "id": "64238197-254a-4f74-ba40-90f51ed8c8b5"
+            },
+            "feedback": {
+              "type": "entity",
+              "id": "15b8fe93-be26-447b-82b0-ab6187ca8d7e"
+            },
+            "siguiente": {
+              "type": "entity",
+              "id": "0fa9c27b-9829-4246-b3c0-7c5082bd121f"
+            },
+            "cerrarBtn": {
+              "type": "entity",
+              "id": "8d729c63-9395-46e0-910a-65c951d8c739"
+            },
+            "textoOp1": {
+              "type": "entity",
+              "id": "a28bcfe2-897c-4a54-afc0-0425204e9864"
+            },
+            "textoOp2": {
+              "type": "entity",
+              "id": "8bc914fa-ee43-441f-a29e-66470f32a17e"
+            },
+            "textoOp3": {
+              "type": "entity",
+              "id": "8665a0d3-0f3f-4f74-aae1-9af22f596a09"
+            },
+            "textoSiguiente": {
+              "type": "entity",
+              "id": "b272b922-d316-4280-b09c-fa912fa6ffdd"
+            }
+          }
+        }
+      },
+      "ui": {
+        "borderColor": "#ffffff",
+        "borderWidth": 1,
+        "flexDirection": "column",
+        "width": 150,
+        "height": 250,
+        "type": "3d",
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
+        "stackingOrder": 1,
+        "backgroundSize": "contain",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "flexWrap": "nowrap"
+      },
+      "name": "Panel Quiz (1)",
+      "order": 4.308179299611534,
+      "hidden": false
+    },
+    "2c5fab3f-32d5-4868-b05a-5b5f793b461f": {
+      "id": "2c5fab3f-32d5-4868-b05a-5b5f793b461f",
+      "position": [
+        0,
+        2.009167215217103,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e0d19cc7-101d-4d3a-9ce1-7440990491a0",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "¿Que come principalmente este pajaro?",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "name": "Pregunta (1)",
+      "order": 3.793777077830939,
+      "hidden": false
+    },
+    "15a2fa27-3374-44ae-a628-907bca2b0e63": {
+      "id": "15a2fa27-3374-44ae-a628-907bca2b0e63",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e0d19cc7-101d-4d3a-9ce1-7440990491a0",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "column",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP1 (1)",
+      "order": 6.5580087534217
+    },
+    "8fbb2587-e20c-4d69-8b29-8476964a6358": {
+      "id": "8fbb2587-e20c-4d69-8b29-8476964a6358",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "15a2fa27-3374-44ae-a628-907bca2b0e63",
+      "components": {},
+      "name": "Icono (14)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "a28bcfe2-897c-4a54-afc0-0425204e9864": {
+      "id": "a28bcfe2-897c-4a54-afc0-0425204e9864",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "15a2fa27-3374-44ae-a628-907bca2b0e63",
+      "components": {},
+      "name": "Texto (14)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Semillas",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "15b8fe93-be26-447b-82b0-ab6187ca8d7e": {
+      "id": "15b8fe93-be26-447b-82b0-ab6187ca8d7e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e0d19cc7-101d-4d3a-9ce1-7440990491a0",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "Es insectívoro: se alimenta sobre todo de insectos",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center"
+      },
+      "name": "Feedback (1)",
+      "order": 8.863459520180726,
+      "hidden": false
+    },
+    "36ceb5c6-11ff-49ce-8520-a1b93f2196c5": {
+      "id": "36ceb5c6-11ff-49ce-8520-a1b93f2196c5",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e0d19cc7-101d-4d3a-9ce1-7440990491a0",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP2 (1)",
+      "order": 6.936832068273769
+    },
+    "ad7e4f47-e19b-42a5-8010-64ee5d1f0014": {
+      "id": "ad7e4f47-e19b-42a5-8010-64ee5d1f0014",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "36ceb5c6-11ff-49ce-8520-a1b93f2196c5",
+      "components": {},
+      "name": "Icono (15)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "8bc914fa-ee43-441f-a29e-66470f32a17e": {
+      "id": "8bc914fa-ee43-441f-a29e-66470f32a17e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "36ceb5c6-11ff-49ce-8520-a1b93f2196c5",
+      "components": {},
+      "name": "Texto (15)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Insectos",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "64238197-254a-4f74-ba40-90f51ed8c8b5": {
+      "id": "64238197-254a-4f74-ba40-90f51ed8c8b5",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e0d19cc7-101d-4d3a-9ce1-7440990491a0",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP3 (1)",
+      "order": 7.2958998532323385
+    },
+    "c9d91430-f5f0-4ddd-8f2d-2974c4d13917": {
+      "id": "c9d91430-f5f0-4ddd-8f2d-2974c4d13917",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "64238197-254a-4f74-ba40-90f51ed8c8b5",
+      "components": {},
+      "name": "Icono (16)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "8665a0d3-0f3f-4f74-aae1-9af22f596a09": {
+      "id": "8665a0d3-0f3f-4f74-aae1-9af22f596a09",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "64238197-254a-4f74-ba40-90f51ed8c8b5",
+      "components": {},
+      "name": "Texto (16)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Peces",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "0fa9c27b-9829-4246-b3c0-7c5082bd121f": {
+      "id": "0fa9c27b-9829-4246-b3c0-7c5082bd121f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e0d19cc7-101d-4d3a-9ce1-7440990491a0",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100",
+        "height": 15,
+        "background": "#c6a15b",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Siguiente (1)",
+      "order": 10.145438208773879
+    },
+    "9ef89e8c-eeeb-4649-ad92-c8cbbb34d432": {
+      "id": "9ef89e8c-eeeb-4649-ad92-c8cbbb34d432",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0fa9c27b-9829-4246-b3c0-7c5082bd121f",
+      "components": {},
+      "name": "Icono (17)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "b272b922-d316-4280-b09c-fa912fa6ffdd": {
+      "id": "b272b922-d316-4280-b09c-fa912fa6ffdd",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0fa9c27b-9829-4246-b3c0-7c5082bd121f",
+      "components": {},
+      "name": "Texto (17)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 100,
+        "height": 15,
+        "text": "Siguiente",
+        "color": "#000000",
         "fontSize": 8,
         "textAlign": "center",
         "verticalTextAlign": "center",
@@ -1097,6 +1915,3871 @@
         "justifyContent": "center"
       },
       "order": 1.3148440303937683
+    },
+    "8d729c63-9395-46e0-910a-65c951d8c739": {
+      "id": "8d729c63-9395-46e0-910a-65c951d8c739",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e0d19cc7-101d-4d3a-9ce1-7440990491a0",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Cerrar (1)",
+      "order": 10.576983468739265
+    },
+    "22800e52-d2ae-4144-b295-58fb455202ab": {
+      "id": "22800e52-d2ae-4144-b295-58fb455202ab",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8d729c63-9395-46e0-910a-65c951d8c739",
+      "components": {},
+      "name": "Icono (18)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "14d25897-fa7e-4858-809d-e826d3d0e440": {
+      "id": "14d25897-fa7e-4858-809d-e826d3d0e440",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8d729c63-9395-46e0-910a-65c951d8c739",
+      "components": {},
+      "name": "Texto (18)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "X",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "b8195e71-5452-445e-aee7-ba928d148f92": {
+      "id": "b8195e71-5452-445e-aee7-ba928d148f92",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "TargetP3",
+      "imageTarget": {},
+      "order": 3.577730798948715,
+      "disabled": true
+    },
+    "29e8a0a6-4ee4-4587-91b2-6ef56b73d580": {
+      "id": "29e8a0a6-4ee4-4587-91b2-6ef56b73d580",
+      "position": [
+        0,
+        -0.47853205538222715,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92",
+      "components": {
+        "128f0daa-c6e0-44ae-b5c8-482023a5b963": {
+          "id": "128f0daa-c6e0-44ae-b5c8-482023a5b963",
+          "name": "boton-quiz",
+          "parameters": {
+            "pajaro": "pajaro3"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón Quiz (2)",
+      "order": 5.3438831616961835,
+      "hidden": false
+    },
+    "22625f15-c762-49cf-a2da-a4a822949181": {
+      "id": "22625f15-c762-49cf-a2da-a4a822949181",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "29e8a0a6-4ee4-4587-91b2-6ef56b73d580",
+      "components": {},
+      "name": "Icono (19)",
+      "ui": {
+        "flexDirection": "row-reverse",
+        "width": 16,
+        "height": 16,
+        "image": null,
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 0,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 0.41012655607609094,
+      "disabled": true
+    },
+    "c79df3ec-0085-494f-b6af-32ca7d6f075a": {
+      "id": "c79df3ec-0085-494f-b6af-32ca7d6f075a",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "29e8a0a6-4ee4-4587-91b2-6ef56b73d580",
+      "components": {
+        "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7": {
+          "id": "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7",
+          "name": "boton-quiz",
+          "parameters": {}
+        }
+      },
+      "name": "Texto (19)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 14,
+        "text": "Iniciemos el Quiz",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "margin": "",
+        "marginTop": 1,
+        "marginBottom": 1,
+        "marginLeft": 1,
+        "marginRight": 1,
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "order": 1.2347420341272946
+    },
+    "4ffff34f-1732-4b34-8534-080bbfd360d7": {
+      "id": "4ffff34f-1732-4b34-8534-080bbfd360d7",
+      "position": [
+        1.503316433410972,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92",
+      "components": {
+        "958456a9-ba23-4caf-8169-74661462cd4c": {
+          "id": "958456a9-ba23-4caf-8169-74661462cd4c",
+          "name": "quiz-nativo",
+          "parameters": {
+            "pregunta": {
+              "type": "entity",
+              "id": "e4167501-adce-4548-9a71-f4a1fea5b402"
+            },
+            "opcion1": {
+              "type": "entity",
+              "id": "1ba9f932-0466-4029-8e06-56765171322b"
+            },
+            "opcion2": {
+              "type": "entity",
+              "id": "0e311782-5a6d-48e7-a360-dc3a51792615"
+            },
+            "opcion3": {
+              "type": "entity",
+              "id": "e4818900-82f2-4289-b32b-8c03233e16e5"
+            },
+            "feedback": {
+              "type": "entity",
+              "id": "a3621a58-a2b2-482f-953a-9fd3d02bc5aa"
+            },
+            "siguiente": {
+              "type": "entity",
+              "id": "b8fdf95e-11c9-439a-864b-76d6ae8dc356"
+            },
+            "cerrarBtn": {
+              "type": "entity",
+              "id": "bdd9d79b-249e-4802-a3e6-428fa8a267ce"
+            },
+            "textoOp1": {
+              "type": "entity",
+              "id": "b47bb26d-7af5-4b07-8316-aa4f9d6991bb"
+            },
+            "textoOp2": {
+              "type": "entity",
+              "id": "c480b0cd-97e6-4754-ba7f-41a4ab6ef206"
+            },
+            "textoOp3": {
+              "type": "entity",
+              "id": "b9a1bad0-506e-4955-97c3-2dc380acd53d"
+            },
+            "textoSiguiente": {
+              "type": "entity",
+              "id": "5f33edf0-6fd4-49fb-b758-4e146367e27f"
+            }
+          }
+        }
+      },
+      "ui": {
+        "borderColor": "#ffffff",
+        "borderWidth": 1,
+        "flexDirection": "column",
+        "width": 150,
+        "height": 250,
+        "type": "3d",
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
+        "stackingOrder": 1,
+        "backgroundSize": "contain",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "flexWrap": "nowrap"
+      },
+      "name": "Panel Quiz (2)",
+      "order": 4.308179299611534,
+      "hidden": false
+    },
+    "e4167501-adce-4548-9a71-f4a1fea5b402": {
+      "id": "e4167501-adce-4548-9a71-f4a1fea5b402",
+      "position": [
+        0,
+        2.009167215217103,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4ffff34f-1732-4b34-8534-080bbfd360d7",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "¿Que come principalmente este pajaro?",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "name": "Pregunta (2)",
+      "order": 3.793777077830939,
+      "hidden": false
+    },
+    "1ba9f932-0466-4029-8e06-56765171322b": {
+      "id": "1ba9f932-0466-4029-8e06-56765171322b",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4ffff34f-1732-4b34-8534-080bbfd360d7",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "column",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP1 (2)",
+      "order": 6.5580087534217
+    },
+    "ddfd47a9-cf95-4c6a-87c2-ae090be2190e": {
+      "id": "ddfd47a9-cf95-4c6a-87c2-ae090be2190e",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1ba9f932-0466-4029-8e06-56765171322b",
+      "components": {},
+      "name": "Icono (20)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "b47bb26d-7af5-4b07-8316-aa4f9d6991bb": {
+      "id": "b47bb26d-7af5-4b07-8316-aa4f9d6991bb",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1ba9f932-0466-4029-8e06-56765171322b",
+      "components": {},
+      "name": "Texto (20)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Semillas",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "a3621a58-a2b2-482f-953a-9fd3d02bc5aa": {
+      "id": "a3621a58-a2b2-482f-953a-9fd3d02bc5aa",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4ffff34f-1732-4b34-8534-080bbfd360d7",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "Es insectívoro: se alimenta sobre todo de insectos",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center"
+      },
+      "name": "Feedback (2)",
+      "order": 8.863459520180726,
+      "hidden": false
+    },
+    "0e311782-5a6d-48e7-a360-dc3a51792615": {
+      "id": "0e311782-5a6d-48e7-a360-dc3a51792615",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4ffff34f-1732-4b34-8534-080bbfd360d7",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP2 (2)",
+      "order": 6.936832068273769
+    },
+    "3e914d7b-4e8f-4c1a-931b-dbef4fb5ccb6": {
+      "id": "3e914d7b-4e8f-4c1a-931b-dbef4fb5ccb6",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0e311782-5a6d-48e7-a360-dc3a51792615",
+      "components": {},
+      "name": "Icono (21)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "c480b0cd-97e6-4754-ba7f-41a4ab6ef206": {
+      "id": "c480b0cd-97e6-4754-ba7f-41a4ab6ef206",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0e311782-5a6d-48e7-a360-dc3a51792615",
+      "components": {},
+      "name": "Texto (21)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Insectos",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "e4818900-82f2-4289-b32b-8c03233e16e5": {
+      "id": "e4818900-82f2-4289-b32b-8c03233e16e5",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4ffff34f-1732-4b34-8534-080bbfd360d7",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP3 (2)",
+      "order": 7.2958998532323385
+    },
+    "1d07319f-3b7c-4365-adaf-3eb1481e53b3": {
+      "id": "1d07319f-3b7c-4365-adaf-3eb1481e53b3",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e4818900-82f2-4289-b32b-8c03233e16e5",
+      "components": {},
+      "name": "Icono (22)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "b9a1bad0-506e-4955-97c3-2dc380acd53d": {
+      "id": "b9a1bad0-506e-4955-97c3-2dc380acd53d",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "e4818900-82f2-4289-b32b-8c03233e16e5",
+      "components": {},
+      "name": "Texto (22)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Peces",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "b8fdf95e-11c9-439a-864b-76d6ae8dc356": {
+      "id": "b8fdf95e-11c9-439a-864b-76d6ae8dc356",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4ffff34f-1732-4b34-8534-080bbfd360d7",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100",
+        "height": 15,
+        "background": "#c6a15b",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Siguiente (2)",
+      "order": 10.145438208773879
+    },
+    "9c463d79-2013-44ab-bbe5-acfbeee63257": {
+      "id": "9c463d79-2013-44ab-bbe5-acfbeee63257",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b8fdf95e-11c9-439a-864b-76d6ae8dc356",
+      "components": {},
+      "name": "Icono (23)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "5f33edf0-6fd4-49fb-b758-4e146367e27f": {
+      "id": "5f33edf0-6fd4-49fb-b758-4e146367e27f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b8fdf95e-11c9-439a-864b-76d6ae8dc356",
+      "components": {},
+      "name": "Texto (23)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 100,
+        "height": 15,
+        "text": "Siguiente",
+        "color": "#000000",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "bdd9d79b-249e-4802-a3e6-428fa8a267ce": {
+      "id": "bdd9d79b-249e-4802-a3e6-428fa8a267ce",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4ffff34f-1732-4b34-8534-080bbfd360d7",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Cerrar (2)",
+      "order": 10.576983468739265
+    },
+    "11d861e5-b00e-4337-9cc7-be3099b99881": {
+      "id": "11d861e5-b00e-4337-9cc7-be3099b99881",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bdd9d79b-249e-4802-a3e6-428fa8a267ce",
+      "components": {},
+      "name": "Icono (24)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "a9d18a76-f16f-4fd4-920d-ce20108fda5e": {
+      "id": "a9d18a76-f16f-4fd4-920d-ce20108fda5e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bdd9d79b-249e-4802-a3e6-428fa8a267ce",
+      "components": {},
+      "name": "Texto (24)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "X",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "ebf62299-6735-4ccd-bc90-1fc42bd41151": {
+      "id": "ebf62299-6735-4ccd-bc90-1fc42bd41151",
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b8195e71-5452-445e-aee7-ba928d148f92",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/guacamaya_idle.glb"
+        },
+        "animationClip": "Idle",
+        "loop": true
+      },
+      "name": "guacamaya_idle.glb (2)",
+      "order": 3.9665911333765718,
+      "shadow": {
+        "receiveShadow": true,
+        "castShadow": true
+      },
+      "hidden": true
+    },
+    "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc": {
+      "id": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "TargetP4",
+      "imageTarget": {},
+      "order": 3.7345681010628784,
+      "disabled": true
+    },
+    "594bc724-f1c1-4803-9f8f-8cf95ed56157": {
+      "id": "594bc724-f1c1-4803-9f8f-8cf95ed56157",
+      "position": [
+        0,
+        -0.47853205538222715,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc",
+      "components": {
+        "128f0daa-c6e0-44ae-b5c8-482023a5b963": {
+          "id": "128f0daa-c6e0-44ae-b5c8-482023a5b963",
+          "name": "boton-quiz",
+          "parameters": {
+            "pajaro": "pajaro4"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón Quiz (3)",
+      "order": 5.3438831616961835,
+      "hidden": false
+    },
+    "25b5da1a-71d6-4179-a9a9-d32a5a30b31e": {
+      "id": "25b5da1a-71d6-4179-a9a9-d32a5a30b31e",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "594bc724-f1c1-4803-9f8f-8cf95ed56157",
+      "components": {},
+      "name": "Icono (25)",
+      "ui": {
+        "flexDirection": "row-reverse",
+        "width": 16,
+        "height": 16,
+        "image": null,
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 0,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 0.41012655607609094,
+      "disabled": true
+    },
+    "e6a521f9-3f48-42a0-b2ce-9ed7dd27ee46": {
+      "id": "e6a521f9-3f48-42a0-b2ce-9ed7dd27ee46",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "594bc724-f1c1-4803-9f8f-8cf95ed56157",
+      "components": {
+        "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7": {
+          "id": "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7",
+          "name": "boton-quiz",
+          "parameters": {}
+        }
+      },
+      "name": "Texto (25)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 14,
+        "text": "Iniciemos el Quiz",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "margin": "",
+        "marginTop": 1,
+        "marginBottom": 1,
+        "marginLeft": 1,
+        "marginRight": 1,
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "order": 1.2347420341272946
+    },
+    "1cf6e6be-372b-4d1f-a4ff-9f708499a0cc": {
+      "id": "1cf6e6be-372b-4d1f-a4ff-9f708499a0cc",
+      "position": [
+        1.503316433410972,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc",
+      "components": {
+        "958456a9-ba23-4caf-8169-74661462cd4c": {
+          "id": "958456a9-ba23-4caf-8169-74661462cd4c",
+          "name": "quiz-nativo",
+          "parameters": {
+            "pregunta": {
+              "type": "entity",
+              "id": "fb80ea7a-6e56-4e5a-b19b-d8a0d63ee760"
+            },
+            "opcion1": {
+              "type": "entity",
+              "id": "47f85de7-5a6b-422e-9951-7759f983da12"
+            },
+            "opcion2": {
+              "type": "entity",
+              "id": "20d55a1a-4e26-4e98-9e16-f5b13dbe6836"
+            },
+            "opcion3": {
+              "type": "entity",
+              "id": "3fd9b8ac-f96b-4345-b933-48bb6f4d7482"
+            },
+            "feedback": {
+              "type": "entity",
+              "id": "23c5c020-3d6e-4d44-8b0a-486e99e91180"
+            },
+            "siguiente": {
+              "type": "entity",
+              "id": "f1a17697-1e94-4d1c-b20d-ed5956942261"
+            },
+            "cerrarBtn": {
+              "type": "entity",
+              "id": "06ca991e-1426-4ce2-ac0a-1a169cc3ed47"
+            },
+            "textoOp1": {
+              "type": "entity",
+              "id": "22b498f0-b8b0-401a-be06-e82087b0d44e"
+            },
+            "textoOp2": {
+              "type": "entity",
+              "id": "e820891a-7518-4827-9830-eeaa804b8b06"
+            },
+            "textoOp3": {
+              "type": "entity",
+              "id": "398afbae-9085-4a6d-b3eb-16255d040d79"
+            },
+            "textoSiguiente": {
+              "type": "entity",
+              "id": "96f25fc2-220a-46c7-9645-d4375c1d0f3c"
+            }
+          }
+        }
+      },
+      "ui": {
+        "borderColor": "#ffffff",
+        "borderWidth": 1,
+        "flexDirection": "column",
+        "width": 150,
+        "height": 250,
+        "type": "3d",
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
+        "stackingOrder": 1,
+        "backgroundSize": "contain",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "flexWrap": "nowrap"
+      },
+      "name": "Panel Quiz (3)",
+      "order": 4.308179299611534,
+      "hidden": false
+    },
+    "fb80ea7a-6e56-4e5a-b19b-d8a0d63ee760": {
+      "id": "fb80ea7a-6e56-4e5a-b19b-d8a0d63ee760",
+      "position": [
+        0,
+        2.009167215217103,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1cf6e6be-372b-4d1f-a4ff-9f708499a0cc",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "¿Que come principalmente este pajaro?",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "name": "Pregunta (3)",
+      "order": 3.793777077830939,
+      "hidden": false
+    },
+    "47f85de7-5a6b-422e-9951-7759f983da12": {
+      "id": "47f85de7-5a6b-422e-9951-7759f983da12",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1cf6e6be-372b-4d1f-a4ff-9f708499a0cc",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "column",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP1 (3)",
+      "order": 6.5580087534217
+    },
+    "ecdd7c3f-c35f-472a-bf75-ef2cd7470f92": {
+      "id": "ecdd7c3f-c35f-472a-bf75-ef2cd7470f92",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "47f85de7-5a6b-422e-9951-7759f983da12",
+      "components": {},
+      "name": "Icono (26)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "22b498f0-b8b0-401a-be06-e82087b0d44e": {
+      "id": "22b498f0-b8b0-401a-be06-e82087b0d44e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "47f85de7-5a6b-422e-9951-7759f983da12",
+      "components": {},
+      "name": "Texto (26)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Semillas",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "23c5c020-3d6e-4d44-8b0a-486e99e91180": {
+      "id": "23c5c020-3d6e-4d44-8b0a-486e99e91180",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1cf6e6be-372b-4d1f-a4ff-9f708499a0cc",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "Es insectívoro: se alimenta sobre todo de insectos",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center"
+      },
+      "name": "Feedback (3)",
+      "order": 8.863459520180726,
+      "hidden": false
+    },
+    "20d55a1a-4e26-4e98-9e16-f5b13dbe6836": {
+      "id": "20d55a1a-4e26-4e98-9e16-f5b13dbe6836",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1cf6e6be-372b-4d1f-a4ff-9f708499a0cc",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP2 (3)",
+      "order": 6.936832068273769
+    },
+    "ec0d638e-9dfa-4820-8fd6-23e45e602b1e": {
+      "id": "ec0d638e-9dfa-4820-8fd6-23e45e602b1e",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "20d55a1a-4e26-4e98-9e16-f5b13dbe6836",
+      "components": {},
+      "name": "Icono (27)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "e820891a-7518-4827-9830-eeaa804b8b06": {
+      "id": "e820891a-7518-4827-9830-eeaa804b8b06",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "20d55a1a-4e26-4e98-9e16-f5b13dbe6836",
+      "components": {},
+      "name": "Texto (27)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Insectos",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "3fd9b8ac-f96b-4345-b933-48bb6f4d7482": {
+      "id": "3fd9b8ac-f96b-4345-b933-48bb6f4d7482",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1cf6e6be-372b-4d1f-a4ff-9f708499a0cc",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP3 (3)",
+      "order": 7.2958998532323385
+    },
+    "907c1203-b8f3-4f13-8774-537de2ed8fe5": {
+      "id": "907c1203-b8f3-4f13-8774-537de2ed8fe5",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3fd9b8ac-f96b-4345-b933-48bb6f4d7482",
+      "components": {},
+      "name": "Icono (28)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "398afbae-9085-4a6d-b3eb-16255d040d79": {
+      "id": "398afbae-9085-4a6d-b3eb-16255d040d79",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3fd9b8ac-f96b-4345-b933-48bb6f4d7482",
+      "components": {},
+      "name": "Texto (28)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Peces",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "f1a17697-1e94-4d1c-b20d-ed5956942261": {
+      "id": "f1a17697-1e94-4d1c-b20d-ed5956942261",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1cf6e6be-372b-4d1f-a4ff-9f708499a0cc",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100",
+        "height": 15,
+        "background": "#c6a15b",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Siguiente (3)",
+      "order": 10.145438208773879
+    },
+    "1713af48-8e37-4f5d-8651-82697bdce479": {
+      "id": "1713af48-8e37-4f5d-8651-82697bdce479",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f1a17697-1e94-4d1c-b20d-ed5956942261",
+      "components": {},
+      "name": "Icono (29)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "96f25fc2-220a-46c7-9645-d4375c1d0f3c": {
+      "id": "96f25fc2-220a-46c7-9645-d4375c1d0f3c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "f1a17697-1e94-4d1c-b20d-ed5956942261",
+      "components": {},
+      "name": "Texto (29)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 100,
+        "height": 15,
+        "text": "Siguiente",
+        "color": "#000000",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "06ca991e-1426-4ce2-ac0a-1a169cc3ed47": {
+      "id": "06ca991e-1426-4ce2-ac0a-1a169cc3ed47",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "1cf6e6be-372b-4d1f-a4ff-9f708499a0cc",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Cerrar (3)",
+      "order": 10.576983468739265
+    },
+    "b04d74f2-fd86-4a60-9fc0-e01d06bc1244": {
+      "id": "b04d74f2-fd86-4a60-9fc0-e01d06bc1244",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "06ca991e-1426-4ce2-ac0a-1a169cc3ed47",
+      "components": {},
+      "name": "Icono (30)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "0df9a894-650a-4ace-9ce0-d12f26f92c4d": {
+      "id": "0df9a894-650a-4ace-9ce0-d12f26f92c4d",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "06ca991e-1426-4ce2-ac0a-1a169cc3ed47",
+      "components": {},
+      "name": "Texto (30)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "X",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "3b9c9cb4-7737-4400-b330-4b0f00c40f53": {
+      "id": "3b9c9cb4-7737-4400-b330-4b0f00c40f53",
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/guacamaya_idle.glb"
+        },
+        "animationClip": "Idle",
+        "loop": true
+      },
+      "name": "guacamaya_idle.glb (3)",
+      "order": 3.9665911333765718,
+      "shadow": {
+        "receiveShadow": true,
+        "castShadow": true
+      },
+      "hidden": true
+    },
+    "4a8322b1-594c-4371-8943-df9fa787600c": {
+      "id": "4a8322b1-594c-4371-8943-df9fa787600c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "TargetP5",
+      "imageTarget": {},
+      "order": 3.7822466552784144,
+      "disabled": true
+    },
+    "bba13238-3954-44f9-82fa-16870dcc6901": {
+      "id": "bba13238-3954-44f9-82fa-16870dcc6901",
+      "position": [
+        0,
+        -0.47853205538222715,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
+      "components": {
+        "128f0daa-c6e0-44ae-b5c8-482023a5b963": {
+          "id": "128f0daa-c6e0-44ae-b5c8-482023a5b963",
+          "name": "boton-quiz",
+          "parameters": {
+            "pajaro": "pajaro5"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón Quiz (4)",
+      "order": 5.3438831616961835,
+      "hidden": false
+    },
+    "5b3032c1-3378-4b5a-9fba-d87298b815c3": {
+      "id": "5b3032c1-3378-4b5a-9fba-d87298b815c3",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bba13238-3954-44f9-82fa-16870dcc6901",
+      "components": {},
+      "name": "Icono (31)",
+      "ui": {
+        "flexDirection": "row-reverse",
+        "width": 16,
+        "height": 16,
+        "image": null,
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 0,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 0.41012655607609094,
+      "disabled": true
+    },
+    "41acf0e8-699d-4c33-8cbb-44c3f4eb513b": {
+      "id": "41acf0e8-699d-4c33-8cbb-44c3f4eb513b",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "bba13238-3954-44f9-82fa-16870dcc6901",
+      "components": {
+        "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7": {
+          "id": "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7",
+          "name": "boton-quiz",
+          "parameters": {}
+        }
+      },
+      "name": "Texto (31)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 14,
+        "text": "Iniciemos el Quiz",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "margin": "",
+        "marginTop": 1,
+        "marginBottom": 1,
+        "marginLeft": 1,
+        "marginRight": 1,
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "order": 1.2347420341272946
+    },
+    "b1561716-d675-4e19-96db-74d03cd02bf8": {
+      "id": "b1561716-d675-4e19-96db-74d03cd02bf8",
+      "position": [
+        1.503316433410972,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
+      "components": {
+        "958456a9-ba23-4caf-8169-74661462cd4c": {
+          "id": "958456a9-ba23-4caf-8169-74661462cd4c",
+          "name": "quiz-nativo",
+          "parameters": {
+            "pregunta": {
+              "type": "entity",
+              "id": "204c60cb-27f8-40f5-9866-792658b47b02"
+            },
+            "opcion1": {
+              "type": "entity",
+              "id": "85500fd5-9b59-490c-bc1b-207f8795ca11"
+            },
+            "opcion2": {
+              "type": "entity",
+              "id": "a7716744-64f4-4747-9d35-096d8872d4e5"
+            },
+            "opcion3": {
+              "type": "entity",
+              "id": "363c7f4e-a7ae-43be-baad-509407fd74c7"
+            },
+            "feedback": {
+              "type": "entity",
+              "id": "5c925178-91a8-46a7-b2b0-b23a37d1f0c7"
+            },
+            "siguiente": {
+              "type": "entity",
+              "id": "37e28931-ba9b-4b4d-9455-cc82dcd44981"
+            },
+            "cerrarBtn": {
+              "type": "entity",
+              "id": "2f614780-4e33-4c45-bf0f-0600f6ab05c1"
+            },
+            "textoOp1": {
+              "type": "entity",
+              "id": "40f18fd4-11b0-4996-937a-d66f6a276a1f"
+            },
+            "textoOp2": {
+              "type": "entity",
+              "id": "68dba313-dffa-48e8-906b-af817ce00e18"
+            },
+            "textoOp3": {
+              "type": "entity",
+              "id": "ee000020-c645-42f4-a29e-30a1771922cf"
+            },
+            "textoSiguiente": {
+              "type": "entity",
+              "id": "50b57954-3c1f-4b8f-b1ae-619381d2f1c2"
+            }
+          }
+        }
+      },
+      "ui": {
+        "borderColor": "#ffffff",
+        "borderWidth": 1,
+        "flexDirection": "column",
+        "width": 150,
+        "height": 250,
+        "type": "3d",
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
+        "stackingOrder": 1,
+        "backgroundSize": "contain",
+        "alignItems": "center",
+        "justifyContent": "center",
+        "opacity": 1,
+        "flexWrap": "nowrap"
+      },
+      "name": "Panel Quiz (4)",
+      "order": 4.308179299611534,
+      "hidden": false
+    },
+    "204c60cb-27f8-40f5-9866-792658b47b02": {
+      "id": "204c60cb-27f8-40f5-9866-792658b47b02",
+      "position": [
+        0,
+        2.009167215217103,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b1561716-d675-4e19-96db-74d03cd02bf8",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "¿Que come principalmente este pajaro?",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "name": "Pregunta (4)",
+      "order": 3.793777077830939,
+      "hidden": false
+    },
+    "85500fd5-9b59-490c-bc1b-207f8795ca11": {
+      "id": "85500fd5-9b59-490c-bc1b-207f8795ca11",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b1561716-d675-4e19-96db-74d03cd02bf8",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "column",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP1 (4)",
+      "order": 6.5580087534217
+    },
+    "e4b81780-e83c-4f5e-b4d9-886c4fef29e4": {
+      "id": "e4b81780-e83c-4f5e-b4d9-886c4fef29e4",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "85500fd5-9b59-490c-bc1b-207f8795ca11",
+      "components": {},
+      "name": "Icono (32)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "40f18fd4-11b0-4996-937a-d66f6a276a1f": {
+      "id": "40f18fd4-11b0-4996-937a-d66f6a276a1f",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "85500fd5-9b59-490c-bc1b-207f8795ca11",
+      "components": {},
+      "name": "Texto (32)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Semillas",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "5c925178-91a8-46a7-b2b0-b23a37d1f0c7": {
+      "id": "5c925178-91a8-46a7-b2b0-b23a37d1f0c7",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b1561716-d675-4e19-96db-74d03cd02bf8",
+      "components": {},
+      "ui": {
+        "width": 150,
+        "height": 36,
+        "text": "Es insectívoro: se alimenta sobre todo de insectos",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "verticalTextAlign": "center"
+      },
+      "name": "Feedback (4)",
+      "order": 8.863459520180726,
+      "hidden": false
+    },
+    "a7716744-64f4-4747-9d35-096d8872d4e5": {
+      "id": "a7716744-64f4-4747-9d35-096d8872d4e5",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b1561716-d675-4e19-96db-74d03cd02bf8",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP2 (4)",
+      "order": 6.936832068273769
+    },
+    "01220292-46f9-4f6f-98c4-fa30f70cdee7": {
+      "id": "01220292-46f9-4f6f-98c4-fa30f70cdee7",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a7716744-64f4-4747-9d35-096d8872d4e5",
+      "components": {},
+      "name": "Icono (33)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "68dba313-dffa-48e8-906b-af817ce00e18": {
+      "id": "68dba313-dffa-48e8-906b-af817ce00e18",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "a7716744-64f4-4747-9d35-096d8872d4e5",
+      "components": {},
+      "name": "Texto (33)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Insectos",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "363c7f4e-a7ae-43be-baad-509407fd74c7": {
+      "id": "363c7f4e-a7ae-43be-baad-509407fd74c7",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b1561716-d675-4e19-96db-74d03cd02bf8",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "OP3 (4)",
+      "order": 7.2958998532323385
+    },
+    "e98b0ef1-fff8-4851-a39d-26a5094a9e8c": {
+      "id": "e98b0ef1-fff8-4851-a39d-26a5094a9e8c",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "363c7f4e-a7ae-43be-baad-509407fd74c7",
+      "components": {},
+      "name": "Icono (34)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "ee000020-c645-42f4-a29e-30a1771922cf": {
+      "id": "ee000020-c645-42f4-a29e-30a1771922cf",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "363c7f4e-a7ae-43be-baad-509407fd74c7",
+      "components": {},
+      "name": "Texto (34)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Peces",
+        "color": "#ffffff",
+        "fontSize": 6,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "37e28931-ba9b-4b4d-9455-cc82dcd44981": {
+      "id": "37e28931-ba9b-4b4d-9455-cc82dcd44981",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b1561716-d675-4e19-96db-74d03cd02bf8",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": "100",
+        "height": 15,
+        "background": "#c6a15b",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Siguiente (4)",
+      "order": 10.145438208773879
+    },
+    "2308f81c-8253-453f-9c73-bf8fddd3901e": {
+      "id": "2308f81c-8253-453f-9c73-bf8fddd3901e",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "37e28931-ba9b-4b4d-9455-cc82dcd44981",
+      "components": {},
+      "name": "Icono (35)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "50b57954-3c1f-4b8f-b1ae-619381d2f1c2": {
+      "id": "50b57954-3c1f-4b8f-b1ae-619381d2f1c2",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "37e28931-ba9b-4b4d-9455-cc82dcd44981",
+      "components": {},
+      "name": "Texto (35)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 100,
+        "height": 15,
+        "text": "Siguiente",
+        "color": "#000000",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "2f614780-4e33-4c45-bf0f-0600f6ab05c1": {
+      "id": "2f614780-4e33-4c45-bf0f-0600f6ab05c1",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "b1561716-d675-4e19-96db-74d03cd02bf8",
+      "components": {},
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Cerrar (4)",
+      "order": 10.576983468739265
+    },
+    "e4baf576-dc70-4dda-a674-61666ec998f9": {
+      "id": "e4baf576-dc70-4dda-a674-61666ec998f9",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "2f614780-4e33-4c45-bf0f-0600f6ab05c1",
+      "components": {},
+      "name": "Icono (36)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "6234a973-43b3-4cd7-8e88-c651bd06a2c8": {
+      "id": "6234a973-43b3-4cd7-8e88-c651bd06a2c8",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "2f614780-4e33-4c45-bf0f-0600f6ab05c1",
+      "components": {},
+      "name": "Texto (36)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "X",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "0b50b318-60df-4b44-9a13-15c429b83563": {
+      "id": "0b50b318-60df-4b44-9a13-15c429b83563",
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/guacamaya_idle.glb"
+        },
+        "animationClip": "Idle",
+        "loop": true
+      },
+      "name": "guacamaya_idle.glb (4)",
+      "order": 3.9665911333765718,
+      "shadow": {
+        "receiveShadow": true,
+        "castShadow": true
+      },
+      "hidden": true
+    },
+    "956ca017-1f7e-4d9c-8041-3648f4a733cc": {
+      "id": "956ca017-1f7e-4d9c-8041-3648f4a733cc",
+      "position": [
+        0,
+        1.3387892630918763,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {
+        "62e9b9e2-38f4-4bbc-865e-80893e8fe8d8": {
+          "id": "62e9b9e2-38f4-4bbc-865e-80893e8fe8d8",
+          "name": "partes-ave",
+          "parameters": {
+            "titulo": {
+              "type": "entity",
+              "id": "a7bc6e5c-3832-4c4d-a71c-d57ab6683892"
+            },
+            "descripcion": {
+              "type": "entity",
+              "id": "9eec84aa-1b96-4a1c-bf02-17004fe35b35"
+            },
+            "cerrarBtn": {
+              "type": "entity",
+              "id": "0179cfaf-2e0b-4f11-8f37-ae4512600661"
+            }
+          }
+        }
+      },
+      "ui": {
+        "flexDirection": "column",
+        "width": 150,
+        "height": 100,
+        "type": "3d",
+        "background": "#ffffff",
+        "backgroundOpacity": 0.5,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "borderRadius": 5
+      },
+      "name": "Etiqueta Partes",
+      "order": 6.7075720487055746,
+      "hidden": true
+    },
+    "a7bc6e5c-3832-4c4d-a71c-d57ab6683892": {
+      "id": "a7bc6e5c-3832-4c4d-a71c-d57ab6683892",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "956ca017-1f7e-4d9c-8041-3648f4a733cc",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 15,
+        "text": "Titulo",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "verticalTextAlign": "center",
+        "margin": "",
+        "marginTop": 1,
+        "marginBottom": 1,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Título",
+      "order": 4.928255997674173
+    },
+    "9eec84aa-1b96-4a1c-bf02-17004fe35b35": {
+      "id": "9eec84aa-1b96-4a1c-bf02-17004fe35b35",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "956ca017-1f7e-4d9c-8041-3648f4a733cc",
+      "components": {},
+      "ui": {
+        "flexDirection": "row",
+        "width": "100",
+        "height": 50,
+        "text": "Sample njkabshj bsahsdb hcfbbs  sdhjcbdfc  vnbv jsbhbjc hjbcfd v,avydlwhef ev   chdhvewc vbhwece evjfvn",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "verticalTextAlign": "center",
+        "margin": "",
+        "marginTop": 1,
+        "marginBottom": 1,
+        "alignItems": "flex-start",
+        "justifyContent": "flex-start"
+      },
+      "name": "Descripción",
+      "order": 6.4219298304676995
+    },
+    "63af8dc8-d67a-4f9b-86f5-68991eb3427c": {
+      "id": "63af8dc8-d67a-4f9b-86f5-68991eb3427c",
+      "position": [
+        0.002288702121946762,
+        0.6619257803280282,
+        0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {
+        "703cb4fc-8732-4c03-a639-d39a6e69bbd3": {
+          "id": "703cb4fc-8732-4c03-a639-d39a6e69bbd3",
+          "name": "punto-parte",
+          "parameters": {
+            "parte": "pico"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Pico",
+      "order": 10.007134480892402
+    },
+    "84d405eb-64db-4ce9-b842-7611f358638e": {
+      "id": "84d405eb-64db-4ce9-b842-7611f358638e",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "63af8dc8-d67a-4f9b-86f5-68991eb3427c",
+      "components": {},
+      "name": "Icono (38)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "886c28f0-335c-42a6-863d-0074d17af5e6": {
+      "id": "886c28f0-335c-42a6-863d-0074d17af5e6",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "63af8dc8-d67a-4f9b-86f5-68991eb3427c",
+      "components": {},
+      "name": "Texto (38)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "+",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "6168746c-6a14-4975-993c-6a79da4d8348": {
+      "id": "6168746c-6a14-4975-993c-6a79da4d8348",
+      "position": [
+        -0.3818928799352608,
+        0.325,
+        0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {
+        "1b30ad32-9f53-4f4c-b184-276e10ce336a": {
+          "id": "1b30ad32-9f53-4f4c-b184-276e10ce336a",
+          "name": "punto-parte",
+          "parameters": {
+            "parte": "cara"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Cara",
+      "order": 8.041281860816744
+    },
+    "dddca5fa-6bbc-4fad-95f9-5e4f13aa136c": {
+      "id": "dddca5fa-6bbc-4fad-95f9-5e4f13aa136c",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6168746c-6a14-4975-993c-6a79da4d8348",
+      "components": {},
+      "name": "Icono (39)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "225ddbe6-8b03-452f-a607-f70987dd02ae": {
+      "id": "225ddbe6-8b03-452f-a607-f70987dd02ae",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6168746c-6a14-4975-993c-6a79da4d8348",
+      "components": {},
+      "name": "Texto (39)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "+",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "5d6c4458-cee4-42e0-8b49-aa943d9ffa48": {
+      "id": "5d6c4458-cee4-42e0-8b49-aa943d9ffa48",
+      "position": [
+        0.4333714273319512,
+        0.325,
+        0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {
+        "83c6eba0-af21-4657-bab6-ffbd8ab53487": {
+          "id": "83c6eba0-af21-4657-bab6-ffbd8ab53487",
+          "name": "punto-parte",
+          "parameters": {
+            "parte": "alas"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Alas",
+      "order": 11.27202066612027
+    },
+    "ebb66c96-eef0-4204-beb0-ba854dd1866f": {
+      "id": "ebb66c96-eef0-4204-beb0-ba854dd1866f",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "5d6c4458-cee4-42e0-8b49-aa943d9ffa48",
+      "components": {},
+      "name": "Icono (40)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "a854c92c-4288-4133-ba04-534145113044": {
+      "id": "a854c92c-4288-4133-ba04-534145113044",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "5d6c4458-cee4-42e0-8b49-aa943d9ffa48",
+      "components": {},
+      "name": "Texto (40)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "+",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "18a1896c-cc43-45b8-8714-872bbb89288e": {
+      "id": "18a1896c-cc43-45b8-8714-872bbb89288e",
+      "position": [
+        -0.2548322934487357,
+        -0.0781597590916161,
+        0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {
+        "ab796e40-1c2c-4bb8-9995-775dc6a13dcd": {
+          "id": "ab796e40-1c2c-4bb8-9995-775dc6a13dcd",
+          "name": "punto-parte",
+          "parameters": {
+            "parte": "cuerpo"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Cuerpo",
+      "order": 12.892388731886896
+    },
+    "786133ac-aae5-440d-9f3e-725d28109a6a": {
+      "id": "786133ac-aae5-440d-9f3e-725d28109a6a",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "18a1896c-cc43-45b8-8714-872bbb89288e",
+      "components": {},
+      "name": "Icono (41)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "09162d79-d022-4451-913a-942e3bfebf0a": {
+      "id": "09162d79-d022-4451-913a-942e3bfebf0a",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "18a1896c-cc43-45b8-8714-872bbb89288e",
+      "components": {},
+      "name": "Texto (41)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "+",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "0b651526-3a40-496a-ba22-af9dc78083b5": {
+      "id": "0b651526-3a40-496a-ba22-af9dc78083b5",
+      "position": [
+        0.3,
+        -0.0781597590916161,
+        0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {
+        "dc8aed9a-23e8-4eaa-a82d-ef072a597e9d": {
+          "id": "dc8aed9a-23e8-4eaa-a82d-ef072a597e9d",
+          "name": "punto-parte",
+          "parameters": {
+            "parte": "patas"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 10,
+        "height": 10,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 0.7,
+        "padding": "10",
+        "gap": 6,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": "",
+        "paddingBottom": "",
+        "margin": "",
+        "marginTop": 2,
+        "marginBottom": 2,
+        "flexWrap": "nowrap"
+      },
+      "name": "Patas",
+      "order": 14.871890445389994
+    },
+    "0b886aac-28e5-4669-abed-c9fa7ad3e921": {
+      "id": "0b886aac-28e5-4669-abed-c9fa7ad3e921",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0b651526-3a40-496a-ba22-af9dc78083b5",
+      "components": {},
+      "name": "Icono (42)",
+      "ui": {
+        "width": 16,
+        "height": 16,
+        "image": {
+          "type": "url",
+          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
+        },
+        "backgroundOpacity": 1
+      },
+      "order": 0.019373727109119943,
+      "disabled": true
+    },
+    "43cf6c9e-a4fb-4d79-8707-91ff68501c5d": {
+      "id": "43cf6c9e-a4fb-4d79-8707-91ff68501c5d",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "0b651526-3a40-496a-ba22-af9dc78083b5",
+      "components": {},
+      "name": "Texto (42)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 10,
+        "height": 10,
+        "text": "+",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "textAlign": "center",
+        "verticalTextAlign": "center",
+        "stackingOrder": 0,
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        },
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1.3148440303937683
+    },
+    "26ceca62-dade-49d2-a178-bb7e0793f6b3": {
+      "id": "26ceca62-dade-49d2-a178-bb7e0793f6b3",
+      "position": [
+        0,
+        0,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8d5228f0-2674-463c-940c-fd855cc3b27a",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/petirrojo_volando.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "petirrojo_volando.glb",
+      "order": 1.0039295782598376
     }
   },
   "spaces": {
