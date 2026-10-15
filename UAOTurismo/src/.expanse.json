@@ -60,7 +60,8 @@
         1
       ],
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "order": 1.0308214152219775
+      "order": 1.0308214152219775,
+      "hidden": false
     },
     "ac1989e3-3b71-49e2-a05f-e682aeb18c36": {
       "components": {},
@@ -2963,7 +2964,8 @@
         "name": "Img4"
       },
       "order": 3.7345681010628784,
-      "hidden": false
+      "hidden": false,
+      "disabled": true
     },
     "594bc724-f1c1-4803-9f8f-8cf95ed56157": {
       "id": "594bc724-f1c1-4803-9f8f-8cf95ed56157",
@@ -3946,7 +3948,7 @@
       "position": [
         0,
         -0.47853205538222715,
-        0
+        0.5
       ],
       "rotation": [
         0,
@@ -3986,7 +3988,8 @@
       },
       "name": "Botón Quiz (4)",
       "order": 5.3438831616961835,
-      "hidden": false
+      "hidden": true,
+      "disabled": true
     },
     "5b3032c1-3378-4b5a-9fba-d87298b815c3": {
       "id": "5b3032c1-3378-4b5a-9fba-d87298b815c3",
@@ -4169,7 +4172,7 @@
       },
       "name": "Panel Quiz (4)",
       "order": 4.308179299611534,
-      "hidden": false
+      "hidden": true
     },
     "204c60cb-27f8-40f5-9866-792658b47b02": {
       "id": "204c60cb-27f8-40f5-9866-792658b47b02",
@@ -7467,37 +7470,6 @@
       "order": 2,
       "disabled": true
     },
-    "c592f59f-0714-43c0-a817-e6a8ede9bce5": {
-      "id": "c592f59f-0714-43c0-a817-e6a8ede9bce5",
-      "position": [
-        0,
-        -0.2875715642926992,
-        0.18405315291541158
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
-      "components": {
-        "acb0da4f-e3c3-4a4e-a634-a17349dea481": {
-          "id": "acb0da4f-e3c3-4a4e-a634-a17349dea481",
-          "name": "avanzar-ave",
-          "parameters": {}
-        }
-      },
-      "name": "Pajaro",
-      "order": 0.2859325839383515
-    },
     "3f69993c-8143-470a-9e40-154cd667451b": {
       "id": "3f69993c-8143-470a-9e40-154cd667451b",
       "position": [
@@ -7533,39 +7505,6 @@
       "shadow": {
         "receiveShadow": true
       }
-    },
-    "c68c1257-4c8f-43b1-986a-2969fb1c632d": {
-      "id": "c68c1257-4c8f-43b1-986a-2969fb1c632d",
-      "position": [
-        0,
-        0,
-        -0.8442866701166335
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "c592f59f-0714-43c0-a817-e6a8ede9bce5",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/martin_pescador_volando_HD.glb"
-        },
-        "animationClip": "Fly",
-        "loop": true
-      },
-      "name": "martin_pescador_volando_HD.glb",
-      "order": 7.153579020279458
     },
     "e84a228b-925d-4e99-8594-b162dbe36d37": {
       "id": "e84a228b-925d-4e99-8594-b162dbe36d37",
@@ -8057,6 +7996,615 @@
         "justifyContent": "center"
       },
       "order": 4
+    },
+    "b37ecba5-a1a9-4c4b-ba8b-f1177d4c0f1c": {
+      "id": "b37ecba5-a1a9-4c4b-ba8b-f1177d4c0f1c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/martin_pescador_idle_HD.glb"
+        },
+        "animationClip": "Idle",
+        "loop": true
+      },
+      "name": "martin_pescador_idle_HD.glb",
+      "order": -1.8376107436943119,
+      "shadow": {
+        "receiveShadow": true
+      }
+    },
+    "3c5a6b67-733d-4833-84f3-7f78eaca40e4": {
+      "id": "3c5a6b67-733d-4833-84f3-7f78eaca40e4",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6eb5d2bc-9f4e-418f-98b5-66751c88ff3d",
+      "components": {},
+      "light": {
+        "type": "directional"
+      },
+      "name": "Luz direccional",
+      "order": 0.6424151737001341
+    },
+    "6abfef27-3c7d-4a98-8ca8-b81ef71a362e": {
+      "id": "6abfef27-3c7d-4a98-8ca8-b81ef71a362e",
+      "position": [
+        10,
+        5,
+        5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6eb5d2bc-9f4e-418f-98b5-66751c88ff3d",
+      "components": {},
+      "light": {
+        "type": "ambient"
+      },
+      "name": "Luz ambiental",
+      "order": 1.8592016125847457
+    },
+    "97db0030-ce05-4d41-bb97-91ea5f664b77": {
+      "id": "97db0030-ce05-4d41-bb97-91ea5f664b77",
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6eb5d2bc-9f4e-418f-98b5-66751c88ff3d",
+      "components": {},
+      "name": "Cámara",
+      "camera": {
+        "type": "perspective",
+        "xr": {
+          "xrCameraType": "face",
+          "phone": "AR",
+          "desktop": "AR",
+          "headset": "disabled"
+        }
+      },
+      "order": 2.3872398766431555
+    },
+    "75ab5764-3391-40b9-955d-4c963c46a9ed": {
+      "id": "75ab5764-3391-40b9-955d-4c963c46a9ed",
+      "position": [
+        0,
+        2,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "6eb5d2bc-9f4e-418f-98b5-66751c88ff3d",
+      "components": {},
+      "face": {
+        "id": 1,
+        "addAttachmentState": false
+      },
+      "name": "Cara",
+      "order": 3.4965432897794972
+    },
+    "84db01b3-e8a2-4fe0-a398-2e5601946d86": {
+      "id": "84db01b3-e8a2-4fe0-a398-2e5601946d86",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "75ab5764-3391-40b9-955d-4c963c46a9ed",
+      "components": {
+        "1172ab01-c02a-4495-b542-782fa632541e": {
+          "id": "1172ab01-c02a-4495-b542-782fa632541e",
+          "name": "vuelo-circular",
+          "parameters": {
+            "velocidad": 100,
+            "radio": 1,
+            "altura": 1
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/martin_pescador_volando_HD.glb"
+        },
+        "animationClip": "Fly",
+        "loop": true
+      },
+      "name": "martin_pescador_volando_HD.glb",
+      "order": 1.3033101508861091
+    },
+    "c41d08c7-50bc-4b16-8d6e-700c9abd6808": {
+      "id": "c41d08c7-50bc-4b16-8d6e-700c9abd6808",
+      "position": [
+        0,
+        0.8,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
+      "components": {
+        "b4e2450a-c231-479f-9aed-19067febbd37": {
+          "id": "b4e2450a-c231-479f-9aed-19067febbd37",
+          "name": "cambiar-space",
+          "parameters": {
+            "destino": "Filtro"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 100,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón Pájaro",
+      "order": 6.122109346616067,
+      "hidden": false
+    },
+    "ac650868-0f31-4146-abe3-66e8f21db292": {
+      "id": "ac650868-0f31-4146-abe3-66e8f21db292",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c41d08c7-50bc-4b16-8d6e-700c9abd6808",
+      "components": {},
+      "name": "Icono (59)",
+      "ui": {
+        "flexDirection": "row-reverse",
+        "width": 16,
+        "height": 16,
+        "image": null,
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 0,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 0.41012655607609094,
+      "disabled": true
+    },
+    "b628c209-4213-47b7-aa9b-0325880ea209": {
+      "id": "b628c209-4213-47b7-aa9b-0325880ea209",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "c41d08c7-50bc-4b16-8d6e-700c9abd6808",
+      "components": {
+        "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7": {
+          "id": "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7",
+          "name": "boton-quiz",
+          "parameters": {}
+        }
+      },
+      "name": "Texto (59)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 100,
+        "height": 14,
+        "text": "Pescador en tu cara!",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "margin": "",
+        "marginTop": 1,
+        "marginBottom": 1,
+        "marginLeft": 1,
+        "marginRight": 1,
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "order": 1.2347420341272946
+    },
+    "186b3e25-9c19-4908-8857-4d758b9edc47": {
+      "id": "186b3e25-9c19-4908-8857-4d758b9edc47",
+      "position": [
+        0,
+        0.6831023034459357,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "b4e2450a-c231-479f-9aed-19067febbd37": {
+          "id": "b4e2450a-c231-479f-9aed-19067febbd37",
+          "name": "cambiar-space",
+          "parameters": {
+            "destino": "Default Space"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 50,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón Pájaro",
+      "order": 5.146087793881062,
+      "hidden": false,
+      "parentId": "6eb5d2bc-9f4e-418f-98b5-66751c88ff3d"
+    },
+    "2370cd3e-852e-4908-99f0-d3018350acd6": {
+      "id": "2370cd3e-852e-4908-99f0-d3018350acd6",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "186b3e25-9c19-4908-8857-4d758b9edc47",
+      "components": {},
+      "name": "Icono (59)",
+      "ui": {
+        "flexDirection": "row-reverse",
+        "width": 16,
+        "height": 16,
+        "image": null,
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 0,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1,
+      "disabled": true
+    },
+    "3f46a308-44c3-44cf-8e40-f4104b0eea11": {
+      "id": "3f46a308-44c3-44cf-8e40-f4104b0eea11",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "186b3e25-9c19-4908-8857-4d758b9edc47",
+      "components": {
+        "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7": {
+          "id": "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7",
+          "name": "boton-quiz",
+          "parameters": {}
+        }
+      },
+      "name": "Texto (59)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 50,
+        "height": 14,
+        "text": "Volver",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "margin": "",
+        "marginTop": 1,
+        "marginBottom": 1,
+        "marginLeft": 1,
+        "marginRight": 1,
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "order": 2
+    },
+    "8517a887-f0c7-43f4-a529-d00f32a548fa": {
+      "id": "8517a887-f0c7-43f4-a529-d00f32a548fa",
+      "position": [
+        0,
+        -0.47853205538222715,
+        0.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "128f0daa-c6e0-44ae-b5c8-482023a5b963": {
+          "id": "128f0daa-c6e0-44ae-b5c8-482023a5b963",
+          "name": "boton-quiz",
+          "parameters": {
+            "pajaro": "pajaro5"
+          }
+        }
+      },
+      "ui": {
+        "type": "3d",
+        "width": 140,
+        "height": 15,
+        "background": "#7b1728",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "backgroundOpacity": 1,
+        "padding": "10",
+        "gap": "6",
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "name": "Botón Quiz (5)",
+      "order": 7.6830404123561635,
+      "hidden": false,
+      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c"
+    },
+    "0a70ec61-3dbc-40ae-9c3f-a2c0f34fac08": {
+      "id": "0a70ec61-3dbc-40ae-9c3f-a2c0f34fac08",
+      "position": [
+        -0.323,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8517a887-f0c7-43f4-a529-d00f32a548fa",
+      "components": {},
+      "name": "Icono (60)",
+      "ui": {
+        "flexDirection": "row-reverse",
+        "width": 16,
+        "height": 16,
+        "image": null,
+        "backgroundOpacity": 1,
+        "backgroundSize": "contain",
+        "borderRadius": 0,
+        "alignItems": "center",
+        "justifyContent": "center"
+      },
+      "order": 1,
+      "disabled": true
+    },
+    "86f47bb6-2973-4768-9d06-1a6c122b776b": {
+      "id": "86f47bb6-2973-4768-9d06-1a6c122b776b",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "8517a887-f0c7-43f4-a529-d00f32a548fa",
+      "components": {
+        "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7": {
+          "id": "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7",
+          "name": "boton-quiz",
+          "parameters": {}
+        }
+      },
+      "name": "Texto (60)",
+      "ui": {
+        "flexDirection": "row",
+        "width": 140,
+        "height": 14,
+        "text": "Iniciemos el Quiz",
+        "color": "#ffffff",
+        "fontSize": 8,
+        "alignItems": "center",
+        "justifyContent": "center",
+        "paddingTop": 0,
+        "paddingBottom": 0,
+        "margin": "",
+        "marginTop": 1,
+        "marginBottom": 1,
+        "marginLeft": 1,
+        "marginRight": 1,
+        "verticalTextAlign": "center",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "order": 2
     }
   },
   "spaces": {
@@ -8072,6 +8620,11 @@
         ],
         "style": "linear"
       }
+    },
+    "6eb5d2bc-9f4e-418f-98b5-66751c88ff3d": {
+      "id": "6eb5d2bc-9f4e-418f-98b5-66751c88ff3d",
+      "name": "Filtro",
+      "activeCamera": "97db0030-ce05-4d41-bb97-91ea5f664b77"
     }
   },
   "entrySpaceId": "88453035-dc0f-486d-868a-8ff7c2fda864"
