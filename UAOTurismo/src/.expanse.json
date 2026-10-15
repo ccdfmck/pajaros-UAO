@@ -118,6 +118,7 @@
         "name": "Img1"
       },
       "order": 2.5918040798150734,
+      "disabled": true,
       "hidden": false
     },
     "d3fcbb9a-48e0-4d15-b935-3e38045fecbe": {
@@ -2962,8 +2963,7 @@
         "name": "Img4"
       },
       "order": 3.7345681010628784,
-      "hidden": false,
-      "disabled": true
+      "hidden": false
     },
     "594bc724-f1c1-4803-9f8f-8cf95ed56157": {
       "id": "594bc724-f1c1-4803-9f8f-8cf95ed56157",
@@ -7498,6 +7498,42 @@
       "name": "Pajaro",
       "order": 0.2859325839383515
     },
+    "3f69993c-8143-470a-9e40-154cd667451b": {
+      "id": "3f69993c-8143-470a-9e40-154cd667451b",
+      "position": [
+        -0.01850632753463438,
+        -0.0781597590916161,
+        0.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/guacamaya_verde_idle_HD.glb"
+        },
+        "animationClip": "Idle",
+        "loop": true
+      },
+      "name": "guacamaya_verde_idle_HD.glb",
+      "order": 2.8269893691141372,
+      "shadow": {
+        "receiveShadow": true
+      }
+    },
     "c68c1257-4c8f-43b1-986a-2969fb1c632d": {
       "id": "c68c1257-4c8f-43b1-986a-2969fb1c632d",
       "position": [
@@ -7531,7 +7567,6 @@
       "name": "martin_pescador_volando_HD.glb",
       "order": 7.153579020279458
     },
-<<<<<<< HEAD
     "e84a228b-925d-4e99-8594-b162dbe36d37": {
       "id": "e84a228b-925d-4e99-8594-b162dbe36d37",
       "position": [
@@ -8022,139 +8057,6 @@
         "justifyContent": "center"
       },
       "order": 4
-=======
-    "5aa6ff2c-53ff-4d61-b94e-ccafc2cbc7a3": {
-      "id": "5aa6ff2c-53ff-4d61-b94e-ccafc2cbc7a3",
-      "position": [
-        0.563554746152401,
-        -0.1,
-        0.9312485279932707
-      ],
-      "rotation": [
-        0,
-        -0.38787454414000727,
-        0,
-        0.9217121774220961
-      ],
-      "scale": [
-        0.49999999999999967,
-        0.5,
-        0.49999999999999967
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/guacamaya_verde_saludo_HD.glb"
-        },
-        "animationClip": "Wave",
-        "loop": true
-      },
-      "name": "guacamaya_verde_saludo_HD.glb",
-      "order": -5.193185203598995
-    },
-    "41573084-212e-427d-946d-65aaccda0d15": {
-      "id": "41573084-212e-427d-946d-65aaccda0d15",
-      "position": [
-        0.564,
-        0.050042122194026054,
-        0.9698147028471421
-      ],
-      "rotation": [
-        0,
-        -0.693293616588477,
-        0,
-        0.7206552304657684
-      ],
-      "scale": [
-        0.02119045374460094,
-        0.021190453744600914,
-        0.02119045374460094
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Madera.glb"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Madera.glb",
-      "order": 0.10916014717840361
-    },
-    "54ef514f-84a6-419e-a566-7ed1dd4f5aa4": {
-      "id": "54ef514f-84a6-419e-a566-7ed1dd4f5aa4",
-      "position": [
-        -0.342,
-        -0.12027424070811538,
-        0.8815433552843379
-      ],
-      "rotation": [
-        0,
-        0.9113342440365505,
-        0,
-        0.4116672146847852
-      ],
-      "scale": [
-        0.5000000000000001,
-        0.5,
-        0.5000000000000001
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/guacamaya_verde_posada_comiendo_HD.glb"
-        },
-        "animationClip": "OpenBeak",
-        "loop": true
-      },
-      "name": "guacamaya_verde_posada_comiendo_HD.glb",
-      "order": -8.021772518497489
-    },
-    "34bb39a8-2c51-4d7b-9ec4-b0ff5760bad1": {
-      "id": "34bb39a8-2c51-4d7b-9ec4-b0ff5760bad1",
-      "position": [
-        -0.3415144676981182,
-        0.050042122194026054,
-        0.9698147028471421
-      ],
-      "rotation": [
-        0,
-        -0.693293616588477,
-        0,
-        0.7206552304657684
-      ],
-      "scale": [
-        0.02119045374460094,
-        0.021190453744600914,
-        0.02119045374460094
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "65c249d0-8a96-47bd-9e5a-65efdfc96412",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/Madera.glb"
-        },
-        "animationClip": "",
-        "loop": true
-      },
-      "name": "Madera.glb (1)",
-      "order": 2.038754704844134
->>>>>>> migue
     }
   },
   "spaces": {
