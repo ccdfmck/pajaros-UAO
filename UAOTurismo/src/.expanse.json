@@ -2964,8 +2964,7 @@
         "name": "Img4"
       },
       "order": 3.7345681010628784,
-      "hidden": false,
-      "disabled": true
+      "hidden": false
     },
     "594bc724-f1c1-4803-9f8f-8cf95ed56157": {
       "id": "594bc724-f1c1-4803-9f8f-8cf95ed56157",
@@ -3876,44 +3875,6 @@
       },
       "order": 1.3148440303937683
     },
-    "3b9c9cb4-7737-4400-b330-4b0f00c40f53": {
-      "id": "3b9c9cb4-7737-4400-b330-4b0f00c40f53",
-      "position": [
-        0,
-        0,
-        1
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        0.7,
-        0.7,
-        0.7
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/guacamaya_idle.glb"
-        },
-        "animationClip": "Idle",
-        "loop": true
-      },
-      "name": "guacamaya_idle.glb (3)",
-      "order": 3.9665911333765718,
-      "shadow": {
-        "receiveShadow": true,
-        "castShadow": true
-      },
-      "hidden": true
-    },
     "4a8322b1-594c-4371-8943-df9fa787600c": {
       "id": "4a8322b1-594c-4371-8943-df9fa787600c",
       "position": [
@@ -3941,145 +3902,8 @@
         "name": "Img5"
       },
       "order": 3.7822466552784144,
-      "hidden": false
-    },
-    "bba13238-3954-44f9-82fa-16870dcc6901": {
-      "id": "bba13238-3954-44f9-82fa-16870dcc6901",
-      "position": [
-        0,
-        -0.47853205538222715,
-        0.5
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
-      "components": {
-        "128f0daa-c6e0-44ae-b5c8-482023a5b963": {
-          "id": "128f0daa-c6e0-44ae-b5c8-482023a5b963",
-          "name": "boton-quiz",
-          "parameters": {
-            "pajaro": "pajaro5"
-          }
-        }
-      },
-      "ui": {
-        "type": "3d",
-        "width": 140,
-        "height": 15,
-        "background": "#7b1728",
-        "borderRadius": 10,
-        "flexDirection": "row",
-        "backgroundOpacity": 1,
-        "padding": "10",
-        "gap": "6",
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "name": "Botón Quiz (4)",
-      "order": 5.3438831616961835,
-      "hidden": true,
+      "hidden": false,
       "disabled": true
-    },
-    "5b3032c1-3378-4b5a-9fba-d87298b815c3": {
-      "id": "5b3032c1-3378-4b5a-9fba-d87298b815c3",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "bba13238-3954-44f9-82fa-16870dcc6901",
-      "components": {},
-      "name": "Icono (31)",
-      "ui": {
-        "flexDirection": "row-reverse",
-        "width": 16,
-        "height": 16,
-        "image": null,
-        "backgroundOpacity": 1,
-        "backgroundSize": "contain",
-        "borderRadius": 0,
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "order": 0.41012655607609094,
-      "disabled": true
-    },
-    "41acf0e8-699d-4c33-8cbb-44c3f4eb513b": {
-      "id": "41acf0e8-699d-4c33-8cbb-44c3f4eb513b",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "bba13238-3954-44f9-82fa-16870dcc6901",
-      "components": {
-        "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7": {
-          "id": "1d4fadae-6fc6-4f0f-b28b-d575af6d84e7",
-          "name": "boton-quiz",
-          "parameters": {}
-        }
-      },
-      "name": "Texto (31)",
-      "ui": {
-        "flexDirection": "row",
-        "width": 140,
-        "height": 14,
-        "text": "Iniciemos el Quiz",
-        "color": "#ffffff",
-        "fontSize": 8,
-        "alignItems": "center",
-        "justifyContent": "center",
-        "paddingTop": 0,
-        "paddingBottom": 0,
-        "margin": "",
-        "marginTop": 1,
-        "marginBottom": 1,
-        "marginLeft": 1,
-        "marginRight": 1,
-        "verticalTextAlign": "center",
-        "font": {
-          "type": "font",
-          "font": "Futura"
-        }
-      },
-      "order": 1.2347420341272946
     },
     "b1561716-d675-4e19-96db-74d03cd02bf8": {
       "id": "b1561716-d675-4e19-96db-74d03cd02bf8",
@@ -4172,7 +3996,7 @@
       },
       "name": "Panel Quiz (4)",
       "order": 4.308179299611534,
-      "hidden": true
+      "hidden": false
     },
     "204c60cb-27f8-40f5-9866-792658b47b02": {
       "id": "204c60cb-27f8-40f5-9866-792658b47b02",
@@ -7506,533 +7330,6 @@
         "receiveShadow": true
       }
     },
-    "e84a228b-925d-4e99-8594-b162dbe36d37": {
-      "id": "e84a228b-925d-4e99-8594-b162dbe36d37",
-      "position": [
-        -1.2374044008583973,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "components": {
-        "6cbcf0e5-c1e2-456b-b4f9-acd90470db79": {
-          "id": "6cbcf0e5-c1e2-456b-b4f9-acd90470db79",
-          "name": "juego-canto",
-          "parameters": {
-            "textoMensaje": {
-              "type": "entity",
-              "id": "f7aa7fe4-1597-4454-b76f-18a3e8325927"
-            },
-            "audioPechirrojo": "assets/Dacnis_pechirrojo_.mp3",
-            "audioPeriquito": "assets/Catita_churica_.mp3",
-            "audioAzulejo": "assets/Tangara_azuleja_.mp3",
-            "pistaPechirrojo": "Hace varios silbiditos cortos y agudos, uno tras otro, como si estuviera llamando a otro pajarito"
-          }
-        }
-      },
-      "ui": {
-        "flexDirection": "column",
-        "width": 150,
-        "height": 250,
-        "type": "3d",
-        "background": "#ffffff",
-        "backgroundOpacity": 0.5,
-        "alignItems": "center",
-        "justifyContent": "center",
-        "borderRadius": 5
-      },
-      "name": "Juego Gavilan",
-      "order": 7.319651873972848,
-      "parentId": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc"
-    },
-    "f7aa7fe4-1597-4454-b76f-18a3e8325927": {
-      "id": "f7aa7fe4-1597-4454-b76f-18a3e8325927",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "e84a228b-925d-4e99-8594-b162dbe36d37",
-      "components": {},
-      "ui": {
-        "flexDirection": "row",
-        "width": "100",
-        "height": 30,
-        "text": "Mensaje",
-        "color": "#ffffff",
-        "fontSize": 6,
-        "type": "3d",
-        "margin": "",
-        "marginTop": 2,
-        "marginBottom": 2,
-        "alignItems": "center",
-        "justifyContent": "center",
-        "verticalTextAlign": "center"
-      },
-      "name": "Puntuación",
-      "order": 1
-    },
-    "916ddfc7-65b4-4537-ab63-7d550603fa39": {
-      "id": "916ddfc7-65b4-4537-ab63-7d550603fa39",
-      "position": [
-        0,
-        0,
-        0.9699355850288209
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "components": {},
-      "ui": {
-        "type": "3d",
-        "width": 50,
-        "height": 15,
-        "background": "#7b1728",
-        "borderRadius": 10,
-        "flexDirection": "row",
-        "backgroundOpacity": 0.7,
-        "padding": "10",
-        "gap": 6,
-        "alignItems": "center",
-        "justifyContent": "center",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "margin": "",
-        "marginTop": 2,
-        "marginBottom": 2,
-        "flexWrap": "nowrap"
-      },
-      "name": "Comenzar",
-      "order": 20.383342360113758,
-      "parentId": "0fa9a7f8-8ea0-4fc4-bfff-5f16928a25e1"
-    },
-    "a80acd27-bb64-4845-b11a-a433f9ba9e1a": {
-      "id": "a80acd27-bb64-4845-b11a-a433f9ba9e1a",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "916ddfc7-65b4-4537-ab63-7d550603fa39",
-      "components": {},
-      "name": "Icono (56)",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
-        },
-        "backgroundOpacity": 1
-      },
-      "order": 3,
-      "disabled": true
-    },
-    "f666edc7-f735-49a4-9684-dc2a03a6d42b": {
-      "id": "f666edc7-f735-49a4-9684-dc2a03a6d42b",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "916ddfc7-65b4-4537-ab63-7d550603fa39",
-      "components": {},
-      "name": "Texto (56)",
-      "ui": {
-        "flexDirection": "row",
-        "width": 50,
-        "height": 15,
-        "text": "Comenzar",
-        "color": "#ffffff",
-        "fontSize": 6,
-        "textAlign": "center",
-        "verticalTextAlign": "center",
-        "stackingOrder": 0,
-        "font": {
-          "type": "font",
-          "font": "Futura"
-        },
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "order": 4
-    },
-    "0fa9a7f8-8ea0-4fc4-bfff-5f16928a25e1": {
-      "id": "0fa9a7f8-8ea0-4fc4-bfff-5f16928a25e1",
-      "position": [
-        0,
-        0,
-        -0.9699355850288209
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "e84a228b-925d-4e99-8594-b162dbe36d37",
-      "components": {},
-      "name": "Objeto vacío (1)",
-      "order": -1.6910754334743554,
-      "ui": {
-        "flexDirection": "row",
-        "type": "3d",
-        "alignItems": "center",
-        "justifyContent": "center",
-        "width": 20,
-        "height": 20,
-        "margin": "",
-        "marginTop": 2,
-        "marginBottom": 2,
-        "gap": 3
-      }
-    },
-    "cf5525f4-007e-4d1f-a6c6-88afe70889b7": {
-      "id": "cf5525f4-007e-4d1f-a6c6-88afe70889b7",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "components": {},
-      "ui": {
-        "type": "3d",
-        "width": 50,
-        "height": 15,
-        "background": "#7b1728",
-        "borderRadius": 10,
-        "flexDirection": "row",
-        "backgroundOpacity": 0.7,
-        "padding": "10",
-        "gap": 6,
-        "alignItems": "center",
-        "justifyContent": "center",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "margin": "",
-        "marginTop": 2,
-        "marginBottom": 2,
-        "flexWrap": "nowrap"
-      },
-      "name": "Reinciar (3)",
-      "order": 10.861322303656898,
-      "parentId": "e84a228b-925d-4e99-8594-b162dbe36d37"
-    },
-    "b0972169-5095-4476-adec-1dae8f99c7b8": {
-      "id": "b0972169-5095-4476-adec-1dae8f99c7b8",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "cf5525f4-007e-4d1f-a6c6-88afe70889b7",
-      "components": {},
-      "name": "Icono (57)",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
-        },
-        "backgroundOpacity": 1
-      },
-      "order": 3,
-      "disabled": true
-    },
-    "797856e7-e38a-4965-821c-e9b431caab15": {
-      "id": "797856e7-e38a-4965-821c-e9b431caab15",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "cf5525f4-007e-4d1f-a6c6-88afe70889b7",
-      "components": {},
-      "name": "Texto (57)",
-      "ui": {
-        "flexDirection": "row",
-        "width": 50,
-        "height": 15,
-        "text": "Reiniciar",
-        "color": "#ffffff",
-        "fontSize": 6,
-        "textAlign": "center",
-        "verticalTextAlign": "center",
-        "stackingOrder": 0,
-        "font": {
-          "type": "font",
-          "font": "Futura"
-        },
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "order": 4
-    },
-    "606e0160-f2c9-4657-82df-d3f90cba6c91": {
-      "id": "606e0160-f2c9-4657-82df-d3f90cba6c91",
-      "position": [
-        0,
-        0,
-        0.9699355850288209
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "components": {},
-      "ui": {
-        "type": "3d",
-        "width": 50,
-        "height": 15,
-        "background": "#7b1728",
-        "borderRadius": 10,
-        "flexDirection": "row",
-        "backgroundOpacity": 0.7,
-        "padding": "10",
-        "gap": 6,
-        "alignItems": "center",
-        "justifyContent": "center",
-        "paddingTop": "",
-        "paddingBottom": "",
-        "margin": "",
-        "marginTop": 2,
-        "marginBottom": 2,
-        "flexWrap": "nowrap"
-      },
-      "name": "Salir",
-      "order": 20.766684720227516,
-      "parentId": "0fa9a7f8-8ea0-4fc4-bfff-5f16928a25e1"
-    },
-    "b4e898ca-c281-4f21-ad8d-a28a1d2d188d": {
-      "id": "b4e898ca-c281-4f21-ad8d-a28a1d2d188d",
-      "position": [
-        -0.323,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "606e0160-f2c9-4657-82df-d3f90cba6c91",
-      "components": {},
-      "name": "Icono (58)",
-      "ui": {
-        "width": 16,
-        "height": 16,
-        "image": {
-          "type": "url",
-          "url": "https://cdn.8thwall.com/web/assets/sprites/8w-icon-m8j35d7y.png"
-        },
-        "backgroundOpacity": 1
-      },
-      "order": 3,
-      "disabled": true
-    },
-    "29075779-c954-4df6-83fe-40571949099c": {
-      "id": "29075779-c954-4df6-83fe-40571949099c",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "606e0160-f2c9-4657-82df-d3f90cba6c91",
-      "components": {},
-      "name": "Texto (58)",
-      "ui": {
-        "flexDirection": "row",
-        "width": 50,
-        "height": 15,
-        "text": "Salir",
-        "color": "#ffffff",
-        "fontSize": 6,
-        "textAlign": "center",
-        "verticalTextAlign": "center",
-        "stackingOrder": 0,
-        "font": {
-          "type": "font",
-          "font": "Futura"
-        },
-        "alignItems": "center",
-        "justifyContent": "center"
-      },
-      "order": 4
-    },
-    "b37ecba5-a1a9-4c4b-ba8b-f1177d4c0f1c": {
-      "id": "b37ecba5-a1a9-4c4b-ba8b-f1177d4c0f1c",
-      "position": [
-        0,
-        0,
-        0
-      ],
-      "rotation": [
-        0,
-        0,
-        0,
-        1
-      ],
-      "scale": [
-        1,
-        1,
-        1
-      ],
-      "geometry": null,
-      "material": null,
-      "parentId": "4a8322b1-594c-4371-8943-df9fa787600c",
-      "components": {},
-      "gltfModel": {
-        "src": {
-          "type": "asset",
-          "asset": "assets/martin_pescador_idle_HD.glb"
-        },
-        "animationClip": "Idle",
-        "loop": true
-      },
-      "name": "martin_pescador_idle_HD.glb",
-      "order": -1.8376107436943119,
-      "shadow": {
-        "receiveShadow": true
-      }
-    },
     "3c5a6b67-733d-4833-84f3-7f78eaca40e4": {
       "id": "3c5a6b67-733d-4833-84f3-7f78eaca40e4",
       "position": [
@@ -8605,6 +7902,89 @@
         }
       },
       "order": 2
+    },
+    "e71aa524-d0a5-46ca-9f6d-f92c7ce95790": {
+      "id": "e71aa524-d0a5-46ca-9f6d-f92c7ce95790",
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc",
+      "components": {
+        "1827c7fe-9f4f-4fe6-86cc-3076f7001a61": {
+          "id": "1827c7fe-9f4f-4fe6-86cc-3076f7001a61",
+          "name": "cambiar-modelo",
+          "parameters": {
+            "otro": {
+              "type": "entity",
+              "id": "1bb1ae57-2f57-486d-8198-38070104d9e4"
+            }
+          }
+        }
+      },
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/halcon_idle_hd.glb"
+        },
+        "animationClip": "Idle",
+        "loop": true
+      },
+      "name": "halcon_idle_hd.glb",
+      "order": 2.7009410497588355,
+      "collider": {
+        "geometry": {
+          "type": "auto"
+        }
+      }
+    },
+    "1bb1ae57-2f57-486d-8198-38070104d9e4": {
+      "id": "1bb1ae57-2f57-486d-8198-38070104d9e4",
+      "position": [
+        0,
+        0,
+        1
+      ],
+      "rotation": [
+        0,
+        -0.7071067811865475,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3d3749c0-7c9f-4609-82aa-46e4f2ca8adc",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/halcon_volando_hd.glb"
+        },
+        "animationClip": "Fly",
+        "loop": true
+      },
+      "name": "halcon_volando_hd.glb (2)",
+      "order": 3.5407111563854103,
+      "hidden": false
     }
   },
   "spaces": {
